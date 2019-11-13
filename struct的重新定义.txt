@@ -1,0 +1,6 @@
+node(){}; //不传递参数时的定义
+node(int x,int y,int c):t(x),id(y),v(c) {};//传递参数时的定义
+
+
+node(int x = 0,int y = 0,int c = 0):t(x),id(y),v(c) {};//和二为一
+//当不传递参数时，默认赋值为等号后面的东西

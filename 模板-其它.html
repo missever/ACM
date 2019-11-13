@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>模板-其它.html</title>
+  <meta name="generator" content="Haroopad 0.13.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>div.oembedall-githubrepos{border:1px solid #DDD;border-radius:4px;list-style-type:none;margin:0 0 10px;padding:8px 10px 0;font:13.34px/1.4 helvetica,arial,freesans,clean,sans-serif;width:452px;background-color:#fff}div.oembedall-githubrepos .oembedall-body{background:-moz-linear-gradient(center top,#FAFAFA,#EFEFEF);background:-webkit-gradient(linear,left top,left bottom,from(#FAFAFA),to(#EFEFEF));border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-top:1px solid #EEE;margin-left:-10px;margin-top:8px;padding:5px 10px;width:100%}div.oembedall-githubrepos h3{font-size:14px;margin:0;padding-left:18px;white-space:nowrap}div.oembedall-githubrepos p.oembedall-description{color:#444;font-size:12px;margin:0 0 3px}div.oembedall-githubrepos p.oembedall-updated-at{color:#888;font-size:11px;margin:0}div.oembedall-githubrepos ul.oembedall-repo-stats{border:none;float:right;font-size:11px;font-weight:700;padding-left:15px;position:relative;z-index:5;margin:0}div.oembedall-githubrepos ul.oembedall-repo-stats li{border:none;color:#666;display:inline-block;list-style-type:none;margin:0!important}div.oembedall-githubrepos ul.oembedall-repo-stats li a{background-color:transparent;border:none;color:#666!important;background-position:5px -2px;background-repeat:no-repeat;border-left:1px solid #DDD;display:inline-block;height:21px;line-height:21px;padding:0 5px 0 23px}div.oembedall-githubrepos ul.oembedall-repo-stats li:first-child a{border-left:medium none;margin-right:-3px}div.oembedall-githubrepos ul.oembedall-repo-stats li a:hover{background:5px -27px no-repeat #4183C4;color:#FFF!important;text-decoration:none}div.oembedall-githubrepos ul.oembedall-repo-stats li:first-child a:hover{border-bottom-left-radius:3px;border-top-left-radius:3px}ul.oembedall-repo-stats li:last-child a:hover{border-bottom-right-radius:3px;border-top-right-radius:3px}span.oembedall-closehide{background-color:#aaa;border-radius:2px;cursor:pointer;margin-right:3px}div.oembedall-container{margin-top:5px;text-align:left}.oembedall-ljuser{font-weight:700}.oembedall-ljuser img{vertical-align:bottom;border:0;padding-right:1px}.oembedall-stoqembed{border-bottom:1px dotted #999;float:left;overflow:hidden;width:730px;line-height:1;background:#FFF;color:#000;font-family:Arial,Liberation Sans,DejaVu Sans,sans-serif;font-size:80%;text-align:left;margin:0;padding:0}.oembedall-stoqembed a{color:#07C;text-decoration:none;margin:0;padding:0}.oembedall-stoqembed a:hover{text-decoration:underline}.oembedall-stoqembed a:visited{color:#4A6B82}.oembedall-stoqembed h3{font-family:Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;font-size:130%;font-weight:700;margin:0;padding:0}.oembedall-stoqembed .oembedall-reputation-score{color:#444;font-size:120%;font-weight:700;margin-right:2px}.oembedall-stoqembed .oembedall-user-info{height:35px;width:185px}.oembedall-stoqembed .oembedall-user-info .oembedall-user-gravatar32{float:left;height:32px;width:32px}.oembedall-stoqembed .oembedall-user-info .oembedall-user-details{float:left;margin-left:5px;overflow:hidden;white-space:nowrap;width:145px}.oembedall-stoqembed .oembedall-question-hyperlink{font-weight:700}.oembedall-stoqembed .oembedall-stats{background:#EEE;margin:0 0 0 7px;padding:4px 7px 6px;width:58px}.oembedall-stoqembed .oembedall-statscontainer{float:left;margin-right:8px;width:86px}.oembedall-stoqembed .oembedall-votes{color:#555;padding:0 0 7px;text-align:center}.oembedall-stoqembed .oembedall-vote-count-post{font-size:240%;color:#808185;display:block;font-weight:700}.oembedall-stoqembed .oembedall-views{color:#999;padding-top:4px;text-align:center}.oembedall-stoqembed .oembedall-status{margin-top:-3px;padding:4px 0;text-align:center;background:#75845C;color:#FFF}.oembedall-stoqembed .oembedall-status strong{color:#FFF;display:block;font-size:140%}.oembedall-stoqembed .oembedall-summary{float:left;width:635px}.oembedall-stoqembed .oembedall-excerpt{line-height:1.2;margin:0;padding:0 0 5px}.oembedall-stoqembed .oembedall-tags{float:left;line-height:18px}.oembedall-stoqembed .oembedall-tags a:hover{text-decoration:none}.oembedall-stoqembed .oembedall-post-tag{background-color:#E0EAF1;border-bottom:1px solid #3E6D8E;border-right:1px solid #7F9FB6;color:#3E6D8E;font-size:90%;line-height:2.4;margin:2px 2px 2px 0;padding:3px 4px;text-decoration:none;white-space:nowrap}.oembedall-stoqembed .oembedall-post-tag:hover{background-color:#3E6D8E;border-bottom:1px solid #37607D;border-right:1px solid #37607D;color:#E0EAF1}.oembedall-stoqembed .oembedall-fr{float:right}.oembedall-stoqembed .oembedall-statsarrow{background-image:url(http://cdn.sstatic.net/stackoverflow/img/sprites.png?v=3);background-repeat:no-repeat;overflow:hidden;background-position:0 -435px;float:right;height:13px;margin-top:12px;width:7px}.oembedall-facebook1{border:1px solid #1A3C6C;padding:0;font:13.34px/1.4 verdana;width:500px}.oembedall-facebook2{background-color:#627add}.oembedall-facebook2 a{color:#e8e8e8;text-decoration:none}.oembedall-facebookBody{background-color:#fff;vertical-align:top;padding:5px}.oembedall-facebookBody .contents{display:inline-block;width:100%}.oembedall-facebookBody div img{float:left;margin-right:5px}div.oembedall-lanyard{-webkit-box-shadow:none;-webkit-transition-delay:0s;-webkit-transition-duration:.4000000059604645s;-webkit-transition-property:width;-webkit-transition-timing-function:cubic-bezier(0.42,0,.58,1);background-attachment:scroll;background-clip:border-box;background-color:transparent;background-image:none;background-origin:padding-box;border-width:0;box-shadow:none;color:#112644;display:block;float:left;font-family:'Trebuchet MS',Trebuchet,sans-serif;font-size:16px;height:253px;line-height:19px;margin:0;max-width:none;min-height:0;outline:#112644 0;overflow-x:visible;overflow-y:visible;padding:0;position:relative;text-align:left;vertical-align:baseline;width:804px}div.oembedall-lanyard .tagline{font-size:1.5em}div.oembedall-lanyard .wrapper{overflow:hidden;clear:both}div.oembedall-lanyard .split{float:left;display:inline}div.oembedall-lanyard .prominent-place .flag:active,div.oembedall-lanyard .prominent-place .flag:focus,div.oembedall-lanyard .prominent-place .flag:hover,div.oembedall-lanyard .prominent-place .flag:link,div.oembedall-lanyard .prominent-place .flag:visited{float:left;display:block;width:48px;height:48px;position:relative;top:-5px;margin-right:10px}div.oembedall-lanyard .place-context{font-size:.889em}div.oembedall-lanyard .prominent-place .sub-place{display:block}div.oembedall-lanyard .prominent-place{font-size:1.125em;line-height:1.1em;font-weight:400}div.oembedall-lanyard .main-date{color:#8CB4E0;font-weight:700;line-height:1.1}div.oembedall-lanyard .first{width:48.57%;margin:0 0 0 2.857%}.mermaid .label{color:#333}.node circle,.node polygon,.node rect{fill:#cde498;stroke:#13540c;stroke-width:1px}.edgePath .path{stroke:green;stroke-width:1.5px}.cluster rect{fill:#cdffb2;rx:40;stroke:#6eaa49;stroke-width:1px}.cluster text{fill:#333}.actor{stroke:#13540c;fill:#cde498}text.actor{fill:#000;stroke:none}.actor-line{stroke:grey}.messageLine0{stroke-width:1.5;stroke-dasharray:"2 2";marker-end:"url(#arrowhead)";stroke:#333}.messageLine1{stroke-width:1.5;stroke-dasharray:"2 2";stroke:#333}#arrowhead{fill:#333}#crosshead path{fill:#333!important;stroke:#333!important}.messageText{fill:#333;stroke:none}.labelBox{stroke:#326932;fill:#cde498}.labelText,.loopText{fill:#000;stroke:none}.loopLine{stroke-width:2;stroke-dasharray:"2 2";marker-end:"url(#arrowhead)";stroke:#326932}.note{stroke:#6eaa49;fill:#fff5ad}.noteText{fill:#000;stroke:none;font-family:'trebuchet ms',verdana,arial;font-size:14px}.section{stroke:none;opacity:.2}.section0,.section2{fill:#6eaa49}.section1,.section3{fill:#fff;opacity:.2}.sectionTitle0,.sectionTitle1,.sectionTitle2,.sectionTitle3{fill:#333}.sectionTitle{text-anchor:start;font-size:11px;text-height:14px}.grid .tick{stroke:lightgrey;opacity:.3;shape-rendering:crispEdges}.grid path{stroke-width:0}.today{fill:none;stroke:red;stroke-width:2px}.task{stroke-width:2}.taskText{text-anchor:middle;font-size:11px}.taskTextOutsideRight{fill:#000;text-anchor:start;font-size:11px}.taskTextOutsideLeft{fill:#000;text-anchor:end;font-size:11px}.taskText0,.taskText1,.taskText2,.taskText3{fill:#fff}.task0,.task1,.task2,.task3{fill:#487e3a;stroke:#13540c}.taskTextOutside0,.taskTextOutside1,.taskTextOutside2,.taskTextOutside3{fill:#000}.active0,.active1,.active2,.active3{fill:#cde498;stroke:#13540c}.activeText0,.activeText1,.activeText2,.activeText3{fill:#000!important}.done0,.done1,.done2,.done3{stroke:grey;fill:lightgrey;stroke-width:2}.doneText0,.doneText1,.doneText2,.doneText3{fill:#000!important}.crit0,.crit1,.crit2,.crit3{stroke:#f88;fill:red;stroke-width:2}.activeCrit0,.activeCrit1,.activeCrit2,.activeCrit3{stroke:#f88;fill:#cde498;stroke-width:2}.doneCrit0,.doneCrit1,.doneCrit2,.doneCrit3{stroke:#f88;fill:lightgrey;stroke-width:2;cursor:pointer;shape-rendering:crispEdges}.activeCritText0,.activeCritText1,.activeCritText2,.activeCritText3,.doneCritText0,.doneCritText1,.doneCritText2,.doneCritText3{fill:#000!important}.titleText{text-anchor:middle;font-size:18px;fill:#000}text{font-family:'trebuchet ms',verdana,arial;font-size:14px}html{height:100%}body{margin:0!important;padding:5px 20px 26px!important;background-color:#fff;font-family:"Lucida Grande","Segoe UI","Apple SD Gothic Neo","Malgun Gothic","Lucida Sans Unicode",Helvetica,Arial,sans-serif;font-size:.9em;overflow-x:hidden;overflow-y:auto}br,h1,h2,h3,h4,h5,h6{clear:both}hr.page{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x;border:0;height:3px;padding:0}hr.underscore{border-top-style:dashed!important}body >:first-child{margin-top:0!important}img.plugin{box-shadow:0 1px 3px rgba(0,0,0,.1);border-radius:3px}iframe{border:0}figure{-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0}kbd{border:1px solid #aaa;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;-moz-box-shadow:1px 2px 2px #ddd;-webkit-box-shadow:1px 2px 2px #ddd;box-shadow:1px 2px 2px #ddd;background-color:#f9f9f9;background-image:-moz-linear-gradient(top,#eee,#f9f9f9,#eee);background-image:-o-linear-gradient(top,#eee,#f9f9f9,#eee);background-image:-webkit-linear-gradient(top,#eee,#f9f9f9,#eee);background-image:linear-gradient(top,#eee,#f9f9f9,#eee);padding:1px 3px;font-family:inherit;font-size:.85em}.oembeded .oembed_photo{display:inline-block}img[data-echo]{margin:25px 0;width:100px;height:100px;background:url(../img/ajax.gif) center center no-repeat #fff}.spinner{display:inline-block;width:10px;height:10px;margin-bottom:-.1em;border:2px solid rgba(0,0,0,.5);border-top-color:transparent;border-radius:100%;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear}.spinner:after{content:'';display:block;width:0;height:0;position:absolute;top:-6px;left:0;border:4px solid transparent;border-bottom-color:rgba(0,0,0,.5);-webkit-transform:rotate(45deg);transform:rotate(45deg)}@-webkit-keyframes spin{to{-webkit-transform:rotate(360deg)}}@keyframes spin{to{transform:rotate(360deg)}}p.toc{margin:0!important}p.toc ul{padding-left:10px}p.toc>ul{padding:10px;margin:0 10px;display:inline-block;border:1px solid #ededed;border-radius:5px}p.toc li,p.toc ul{list-style-type:none}p.toc li{width:100%;padding:0;overflow:hidden}p.toc li a::after{content:"."}p.toc li a:before{content:"• "}p.toc h5{text-transform:uppercase}p.toc .title{float:left;padding-right:3px}p.toc .number{margin:0;float:right;padding-left:3px;background:#fff;display:none}input.task-list-item{margin-left:-1.62em}.markdown{font-family:"Hiragino Sans GB","Microsoft YaHei",STHeiti,SimSun,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",'Segoe UI',AppleSDGothicNeo-Medium,'Malgun Gothic',Verdana,Tahoma,sans-serif;padding:20px}.markdown a{text-decoration:none;vertical-align:baseline}.markdown a:hover{text-decoration:underline}.markdown h1{font-size:2.2em;font-weight:700;margin:1.5em 0 1em}.markdown h2{font-size:1.8em;font-weight:700;margin:1.275em 0 .85em}.markdown h3{font-size:1.6em;font-weight:700;margin:1.125em 0 .75em}.markdown h4{font-size:1.4em;font-weight:700;margin:.99em 0 .66em}.markdown h5{font-size:1.2em;font-weight:700;margin:.855em 0 .57em}.markdown h6{font-size:1em;font-weight:700;margin:.75em 0 .5em}.markdown h1+p,.markdown h1:first-child,.markdown h2+p,.markdown h2:first-child,.markdown h3+p,.markdown h3:first-child,.markdown h4+p,.markdown h4:first-child,.markdown h5+p,.markdown h5:first-child,.markdown h6+p,.markdown h6:first-child{margin-top:0}.markdown hr{border:1px solid #ccc}.markdown p{margin:1em 0;word-wrap:break-word}.markdown ol{list-style-type:decimal}.markdown li{display:list-item;line-height:1.4em}.markdown blockquote{margin:1em 20px}.markdown blockquote>:first-child{margin-top:0}.markdown blockquote>:last-child{margin-bottom:0}.markdown blockquote cite:before{content:'\2014 \00A0'}.markdown .code{border-radius:3px;word-wrap:break-word}.markdown pre{border-radius:3px;word-wrap:break-word;border:1px solid #ccc;overflow:auto;padding:.5em}.markdown pre code{border:0;display:block}.markdown pre>code{font-family:Consolas,Inconsolata,Courier,monospace;font-weight:700;white-space:pre;margin:0}.markdown code{border-radius:3px;word-wrap:break-word;border:1px solid #ccc;padding:0 5px;margin:0 2px}.markdown img{max-width:100%}.markdown mark{color:#000;background-color:#fcf8e3}.markdown table{padding:0;border-collapse:collapse;border-spacing:0;margin-bottom:16px}.markdown table tr td,.markdown table tr th{border:1px solid #ccc;margin:0;padding:6px 13px}.markdown table tr th{font-weight:700}.markdown table tr th>:first-child{margin-top:0}.markdown table tr th>:last-child{margin-bottom:0}.markdown table tr td>:first-child{margin-top:0}.markdown table tr td>:last-child{margin-bottom:0}@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700);.haroopad{padding:20px;color:#222;font-size:15px;font-family:"Roboto Condensed",Tauri,"Hiragino Sans GB","Microsoft YaHei",STHeiti,SimSun,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",'Segoe UI',AppleSDGothicNeo-Medium,'Malgun Gothic',Verdana,Tahoma,sans-serif;background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}.haroopad a{color:#3269a0}.haroopad a:hover{color:#4183c4}.haroopad h2{border-bottom:1px solid #e6e6e6}.haroopad h6{color:#777}.haroopad hr{border:1px solid #e6e6e6}.haroopad blockquote>code,.haroopad h1>code,.haroopad h2>code,.haroopad h3>code,.haroopad h4>code,.haroopad h5>code,.haroopad h6>code,.haroopad li>code,.haroopad p>code,.haroopad td>code{font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:85%;background-color:rgba(0,0,0,.02);padding:.2em .5em;border:1px solid #efefef}.haroopad pre>code{font-size:1em;letter-spacing:-1px;font-weight:700}.haroopad blockquote{border-left:4px solid #e6e6e6;padding:0 15px;color:#777}.haroopad table{background-color:#fafafa}.haroopad table tr td,.haroopad table tr th{border:1px solid #e6e6e6}.haroopad table tr:nth-child(2n){background-color:#f2f2f2}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8;-webkit-text-size-adjust:none}.diff .hljs-header,.hljs-comment,.hljs-javadoc{color:#998;font-style:italic}.css .rule .hljs-keyword,.hljs-keyword,.hljs-request,.hljs-status,.hljs-subst,.hljs-winutils,.nginx .hljs-title{color:#333;font-weight:700}.hljs-hexcolor,.hljs-number,.ruby .hljs-constant{color:teal}.hljs-dartdoc,.hljs-phpdoc,.hljs-string,.hljs-tag .hljs-value,.tex .hljs-formula{color:#d14}.hljs-id,.hljs-title,.scss .hljs-preprocessor{color:#900;font-weight:700}.hljs-list .hljs-keyword,.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type,.tex .hljs-command,.vhdl .hljs-literal{color:#458;font-weight:700}.django .hljs-tag .hljs-keyword,.hljs-rules .hljs-property,.hljs-tag,.hljs-tag .hljs-title{color:navy;font-weight:400}.hljs-attribute,.hljs-variable,.lisp .hljs-body{color:teal}.hljs-regexp{color:#009926}.clojure .hljs-keyword,.hljs-prompt,.hljs-symbol,.lisp .hljs-keyword,.ruby .hljs-symbol .hljs-string,.scheme .hljs-keyword,.tex .hljs-special{color:#990073}.hljs-built_in{color:#0086b3}.hljs-cdata,.hljs-doctype,.hljs-pi,.hljs-pragma,.hljs-preprocessor,.hljs-shebang{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.diff .hljs-change{background:#0086b3}.hljs-chunk{color:#aaa}.MathJax_Hover_Frame{border-radius:.25em;-webkit-border-radius:.25em;-moz-border-radius:.25em;-khtml-border-radius:.25em;box-shadow:0 0 15px #83A;-webkit-box-shadow:0 0 15px #83A;-moz-box-shadow:0 0 15px #83A;-khtml-box-shadow:0 0 15px #83A;border:1px solid #A6D!important;display:inline-block;position:absolute}.MathJax_Hover_Arrow{position:absolute;width:15px;height:11px;cursor:pointer}#MathJax_About{position:fixed;left:50%;width:auto;text-align:center;border:3px outset;padding:1em 2em;background-color:#DDD;color:#000;cursor:default;font-family:message-box;font-size:120%;font-style:normal;text-indent:0;text-transform:none;line-height:normal;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;z-index:201;border-radius:15px;-webkit-border-radius:15px;-moz-border-radius:15px;-khtml-border-radius:15px;box-shadow:0 10px 20px gray;-webkit-box-shadow:0 10px 20px gray;-moz-box-shadow:0 10px 20px gray;-khtml-box-shadow:0 10px 20px gray;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}.MathJax_Menu{position:absolute;background-color:#fff;color:#000;width:auto;padding:2px;border:1px solid #CCC;margin:0;cursor:default;font:menu;text-align:left;text-indent:0;text-transform:none;line-height:normal;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;z-index:201;box-shadow:0 10px 20px gray;-webkit-box-shadow:0 10px 20px gray;-moz-box-shadow:0 10px 20px gray;-khtml-box-shadow:0 10px 20px gray;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}.MathJax_MenuItem{padding:2px 2em;background:0 0}.MathJax_MenuArrow{position:absolute;right:.5em;color:#666}.MathJax_MenuActive .MathJax_MenuArrow{color:#fff}.MathJax_MenuArrow.RTL{left:.5em;right:auto}.MathJax_MenuCheck{position:absolute;left:.7em}.MathJax_MenuCheck.RTL{right:.7em;left:auto}.MathJax_MenuRadioCheck{position:absolute;left:1em}.MathJax_MenuRadioCheck.RTL{right:1em;left:auto}.MathJax_MenuLabel{padding:2px 2em 4px 1.33em;font-style:italic}.MathJax_MenuRule{border-top:1px solid #CCC;margin:4px 1px 0}.MathJax_MenuDisabled{color:GrayText}.MathJax_MenuActive{background-color:Highlight;color:HighlightText}.MathJax_Menu_Close{position:absolute;width:31px;height:31px;top:-15px;left:-15px}#MathJax_Zoom{position:absolute;background-color:#F0F0F0;overflow:auto;display:block;z-index:301;padding:.5em;border:1px solid #000;margin:0;font-weight:400;font-style:normal;text-align:left;text-indent:0;text-transform:none;line-height:normal;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;box-shadow:5px 5px 15px #AAA;-webkit-box-shadow:5px 5px 15px #AAA;-moz-box-shadow:5px 5px 15px #AAA;-khtml-box-shadow:5px 5px 15px #AAA;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}#MathJax_ZoomOverlay{position:absolute;left:0;top:0;z-index:300;display:inline-block;width:100%;height:100%;border:0;padding:0;margin:0;background-color:#fff;opacity:0;filter:alpha(opacity=0)}#MathJax_ZoomFrame{position:relative;display:inline-block;height:0;width:0}#MathJax_ZoomEventTrap{position:absolute;left:0;top:0;z-index:302;display:inline-block;border:0;padding:0;margin:0;background-color:#fff;opacity:0;filter:alpha(opacity=0)}.MathJax_Preview{color:#888}#MathJax_Message{position:fixed;left:1px;bottom:2px;background-color:#E6E6E6;border:1px solid #959595;margin:0;padding:2px 8px;z-index:102;color:#000;font-size:80%;width:auto;white-space:nowrap}#MathJax_MSIE_Frame{position:absolute;top:0;left:0;width:0;z-index:101;border:0;margin:0;padding:0}.MathJax_Error{color:#C00;font-style:italic}.MathJax_Display{text-align:center;margin:1em 0;position:relative;display:block!important;text-indent:0;max-width:none;max-height:none;min-width:0;min-height:0;width:100%}.MathJax .merror{background-color:#FF8;color:#C00;border:1px solid #C00;padding:1px 3px;font-style:normal;font-size:90%}.MathJax .MJX-monospace{font-family:monospace}.MathJax .MJX-sans-serif{font-family:sans-serif}#MathJax_Tooltip{background-color:InfoBackground;color:InfoText;border:1px solid #000;box-shadow:2px 2px 5px #AAA;-webkit-box-shadow:2px 2px 5px #AAA;-moz-box-shadow:2px 2px 5px #AAA;-khtml-box-shadow:2px 2px 5px #AAA;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true');padding:3px 4px;z-index:401;position:absolute;left:0;top:0;width:auto;height:auto;display:none}.MathJax{display:inline;font-style:normal;font-weight:400;line-height:normal;font-size:100%;font-size-adjust:none;text-indent:0;text-align:left;text-transform:none;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;direction:ltr;max-width:none;max-height:none;min-width:0;min-height:0;border:0;padding:0;margin:0}.MathJax a,.MathJax img,.MathJax nobr{border:0;padding:0;margin:0;max-width:5000em;max-height:5000em;min-width:0;min-height:0;vertical-align:0;line-height:normal;text-decoration:none}img.MathJax_strut{border:0!important;padding:0!important;margin:0!important;vertical-align:0!important}.MathJax span{display:inline;position:static;border:0;padding:0;margin:0;vertical-align:0;line-height:normal;text-decoration:none}.MathJax nobr{white-space:nowrap!important}.MathJax img{display:inline!important;float:none!important}.MathJax *{transition:none;-webkit-transition:none;-moz-transition:none;-ms-transition:none;-o-transition:none}.MathJax_Processing{visibility:hidden;position:fixed;width:0;height:0;overflow:hidden}.MathJax_Processed{display:none!important}.MathJax_ExBox{display:block!important;overflow:hidden;width:1px;height:60ex;min-height:0;max-height:none}.MathJax .MathJax_EmBox{display:block!important;overflow:hidden;width:1px;height:60em;min-height:0;max-height:none}.MathJax .MathJax_HitBox{cursor:text;background:#fff;opacity:0;filter:alpha(opacity=0)}#MathJax_Tooltip *,.MathJax .MathJax_HitBox *{filter:none;opacity:1;background:0 0}@font-face{font-family:MathJax_Main;src:url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff?rev=2.4-beta-2) format('woff'),url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf?rev=2.4-beta-2) format('opentype')}@font-face{font-family:MathJax_Main;src:url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff?rev=2.4-beta-2) format('woff'),url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf?rev=2.4-beta-2) format('opentype');font-weight:700}@font-face{font-family:MathJax_Main;src:url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff?rev=2.4-beta-2) format('woff'),url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf?rev=2.4-beta-2) format('opentype');font-style:italic}@font-face{font-family:MathJax_Math;src:url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff?rev=2.4-beta-2) format('woff'),url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf?rev=2.4-beta-2) format('opentype');font-style:italic}@font-face{font-family:MathJax_Caligraphic;src:url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff?rev=2.4-beta-2) format('woff'),url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf?rev=2.4-beta-2) format('opentype')}@font-face{font-family:MathJax_Size1;src:url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff?rev=2.4-beta-2) format('woff'),url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf?rev=2.4-beta-2) format('opentype')}@font-face{font-family:MathJax_Size2;src:url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff?rev=2.4-beta-2) format('woff'),url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf?rev=2.4-beta-2) format('opentype')}@font-face{font-family:MathJax_Size3;src:url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff?rev=2.4-beta-2) format('woff'),url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf?rev=2.4-beta-2) format('opentype')}@font-face{font-family:MathJax_Size4;src:url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff?rev=2.4-beta-2) format('woff'),url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf?rev=2.4-beta-2) format('opentype')}.MathJax .noError{font-size:90%;text-align:left;color:#000;padding:1px 3px;border:1px solid}@font-face{font-family:MathJax_AMS;src:url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/woff/MathJax_AMS-Regular.woff?rev=2.4-beta-2) format('woff'),url(file:///C:/Users/USER/AppData/Roaming/Haroo%20Studio/Haroopad/Libraries/.js/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf?rev=2.4-beta-2) format('opentype')}footer{position:fixed;font-size:.8em;text-align:right;bottom:0;margin-left:-25px;height:20px;width:100%}</style>
+</head>
+<body class="markdown haroopad">
+<h1 id="other"><a name="other" href="#other"></a>Other</h1><p class="toc" style="undefined"></p><ul>
+<li><ul>
+<li><ul>
+<li><span class="title">
+<a href="#输入输出挂" title="输入输出挂">输入输出挂</a>
+</span>
+<!--span class="number">
+0
+</span-->
+</li>
+<li><span class="title">
+<a href="#预处理优化" title="预处理优化">预处理优化</a>
+</span>
+<!--span class="number">
+1
+</span-->
+</li>
+<li><span class="title">
+<a href="#流水线作业的贪心" title="流水线作业的贪心">流水线作业的贪心</a>
+</span>
+<!--span class="number">
+2
+</span-->
+</li>
+<li><span class="title">
+<a href="#dp优化" title="DP优化">DP优化</a>
+</span>
+<!--span class="number">
+3
+</span-->
+<ul>
+<li><ul>
+<li><span class="title">
+<a href="#经典案例" title="经典案例">经典案例</a>
+</span>
+<!--span class="number">
+4
+</span-->
+</li>
+<li><span class="title">
+<a href="#注意dp方程的后效性" title="注意DP方程的后效性">注意DP方程的后效性</a>
+</span>
+<!--span class="number">
+5
+</span-->
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="title">
+<a href="#动态维护凸壳" title="动态维护凸壳">动态维护凸壳</a>
+</span>
+<!--span class="number">
+6
+</span-->
+</li>
+<li><span class="title">
+<a href="#扩栈" title="扩栈">扩栈</a>
+</span>
+<!--span class="number">
+7
+</span-->
+</li>
+</ul>
+</li>
+<li><span class="title">
+<a href="#java" title="Java">Java</a>
+</span>
+<!--span class="number">
+8
+</span-->
+<ul>
+<li><span class="title">
+<a href="#格式模板" title="格式模板">格式模板</a>
+</span>
+<!--span class="number">
+9
+</span-->
+</li>
+<li><span class="title">
+<a href="#凸多边形面积并" title="凸多边形面积并">凸多边形面积并</a>
+</span>
+<!--span class="number">
+10
+</span-->
+</li>
+<li><span class="title">
+<a href="#排序重载" title="排序重载">排序重载</a>
+</span>
+<!--span class="number">
+11
+</span-->
+<ul>
+<li><span class="title">
+<a href="#文件读写" title="文件读写">文件读写</a>
+</span>
+<!--span class="number">
+12
+</span-->
+</li>
+</ul>
+</li>
+<li><span class="title">
+<a href="#保留位数小数输出" title="保留位数小数输出">保留位数小数输出</a>
+</span>
+<!--span class="number">
+13
+</span-->
+</li>
+<li><span class="title">
+<a href="#java类的函数" title="JAVA类的函数">JAVA类的函数</a>
+</span>
+<!--span class="number">
+14
+</span-->
+<ul>
+<li><span class="title">
+<a href="#integer类" title="Integer类">Integer类</a>
+</span>
+<!--span class="number">
+15
+</span-->
+</li>
+<li><span class="title">
+<a href="#string类" title="String类">String类</a>
+</span>
+<!--span class="number">
+16
+</span-->
+</li>
+<li><span class="title">
+<a href="#stringbuffer类，性能比string类高" title="StringBuffer类，性能比String类高">StringBuffer类，性能比String类高</a>
+</span>
+<!--span class="number">
+17
+</span-->
+</li>
+<li><span class="title">
+<a href="#random类，随机数-java.util.random" title="Random类，随机数  java.util.Random">Random类，随机数  java.util.Random</a>
+</span>
+<!--span class="number">
+18
+</span-->
+</li>
+<li><span class="title">
+<a href="#biginteger类" title="BigInteger类">BigInteger类</a>
+</span>
+<!--span class="number">
+19
+</span-->
+</li>
+<li><span class="title">
+<a href="#bigdecimal类" title="BigDecimal类">BigDecimal类</a>
+</span>
+<!--span class="number">
+20
+</span-->
+</li>
+<li><span class="title">
+<a href="#list类" title="List类">List类</a>
+</span>
+<!--span class="number">
+21
+</span-->
+</li>
+<li><span class="title">
+<a href="#set-&amp;&amp;-map-&amp;&amp;-hashset-&amp;&amp;-hashmap" title="Set &amp;&amp; Map &amp;&amp; HashSet &amp;&amp; HashMap">Set &amp;&amp; Map &amp;&amp; HashSet &amp;&amp; HashMap</a>
+</span>
+<!--span class="number">
+22
+</span-->
+</li>
+<li><span class="title">
+<a href="#arrays类" title="Arrays类">Arrays类</a>
+</span>
+<!--span class="number">
+23
+</span-->
+</li>
+<li><span class="title">
+<a href="#scanner类" title="Scanner类">Scanner类</a>
+</span>
+<!--span class="number">
+24
+</span-->
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+
+</ul>
+<p></p><h3 id="输入输出挂"><a name="输入输出挂" href="#输入输出挂"></a>输入输出挂</h3><pre><code data-origin="<pre><code>template &amp;lt;class T&amp;gt;
+inline void In(T &amp;amp;ret) {
+    char c;
+    ret = 0;
+    while ((c = getchar()) &amp;lt; '0' || c &amp;gt; '9');
+    while (c &amp;gt;= '0' &amp;amp;&amp;amp; c &amp;lt;= '9') {
+        ret = ret * 10 + (c - '0'), c = getchar();
+    }
+}
+void Out(LL a) {
+    if (a &amp;gt;= 10) Out(a / 10);
+    putchar(a % 10 + '0');
+}
+
+
+const int BUFFER_MAX_SIZE = 100000;
+struct Quick_In {
+    char buf[BUFFER_MAX_SIZE], *ps = buf, *pe = buf + 1;
+    inline void InNext() {
+        if (++ps == pe)
+            pe = (ps = buf) + fread(buf, sizeof(char), sizeof(buf) / sizeof(char), stdin);
+    }
+    template&amp;lt;class T&amp;gt;
+    inline bool operator()(T &amp;amp;number) {
+        number = 0;
+        T f = 1;
+        bool vis_point = 0;
+        if (ps == pe) return false; //EOF
+        do {
+            InNext();
+            if ('-' == *ps) f = -1;
+        } while (ps != pe &amp;amp;&amp;amp; !isdigit(*ps));
+        if (ps == pe) return false; //EOF
+        do {
+            if((*ps) == '.') vis_point = 1;
+            else {
+                number = number * 10 + *ps - 48;
+                if(vis_point) f *= 0.1;
+            }
+            InNext();
+        } while (ps != pe &amp;amp;&amp;amp; (isdigit(*ps) || (*ps) == '.'));
+        number *= f;
+        return true;
+    }
+} In;
+struct Quick_Out {
+    char buf[BUFFER_MAX_SIZE], *ps = buf, *pe = buf + BUFFER_MAX_SIZE;
+    char tmp[100];
+    double dx[15] = {5e-1,5e-2,5e-3,5e-4,5e-5,5e-6,5e-7,5e-8,5e-9,5e-10,5e-11,5e-12,5e-13,5e-14,5e-15};
+    inline void write() {
+        fwrite(buf, sizeof(char), ps - buf, stdout);
+        ps = buf;
+    }
+    inline void oc(char c) {
+        *(ps++) = c;
+        if (ps == pe) write();
+    }
+    inline void os(char *s) {
+        for (int i = 0; s[i]; ++i) oc(s[i]);
+    }
+    template&amp;lt;class T&amp;gt;
+    inline void oi(T x, char bc = '\n') {
+        if (x &amp;lt; 0) oc('-'), x = -x;
+        int len = 0;
+        if (!x) tmp[len++] = '0';
+        while (x) tmp[len++] = x % 10 + '0', x /= 10;
+        while (len)  oc(tmp[--len]);
+        oc(bc);
+    }
+    void of(double x, int fix = 8, char bc = '\n') {
+        x += dx[fix];
+        if (x &amp;lt; 0) oc('-'), x = -x;
+        oi((LL)x, '.');
+        x -= (LL)x;
+        while (fix--) {
+            x *= 10;
+            oc('0' + (int)x);
+            x -= (int)x;
+        }
+        oc(bc);
+    }
+    ~Quick_Out() {
+        write();
+    }
+} Out;
+</code></pre>">template &lt;class T&gt;
+inline void In(T &amp;ret) {
+    char c;
+    ret = 0;
+    while ((c = getchar()) &lt; '0' || c &gt; '9');
+    while (c &gt;= '0' &amp;&amp; c &lt;= '9') {
+        ret = ret * 10 + (c - '0'), c = getchar();
+    }
+}
+void Out(LL a) {
+    if (a &gt;= 10) Out(a / 10);
+    putchar(a % 10 + '0');
+}
+
+
+const int BUFFER_MAX_SIZE = 100000;
+struct Quick_In {
+    char buf[BUFFER_MAX_SIZE], *ps = buf, *pe = buf + 1;
+    inline void InNext() {
+        if (++ps == pe)
+            pe = (ps = buf) + fread(buf, sizeof(char), sizeof(buf) / sizeof(char), stdin);
+    }
+    template&lt;class T&gt;
+    inline bool operator()(T &amp;number) {
+        number = 0;
+        T f = 1;
+        bool vis_point = 0;
+        if (ps == pe) return false; //EOF
+        do {
+            InNext();
+            if ('-' == *ps) f = -1;
+        } while (ps != pe &amp;&amp; !isdigit(*ps));
+        if (ps == pe) return false; //EOF
+        do {
+            if((*ps) == '.') vis_point = 1;
+            else {
+                number = number * 10 + *ps - 48;
+                if(vis_point) f *= 0.1;
+            }
+            InNext();
+        } while (ps != pe &amp;&amp; (isdigit(*ps) || (*ps) == '.'));
+        number *= f;
+        return true;
+    }
+} In;
+struct Quick_Out {
+    char buf[BUFFER_MAX_SIZE], *ps = buf, *pe = buf + BUFFER_MAX_SIZE;
+    char tmp[100];
+    double dx[15] = {5e-1,5e-2,5e-3,5e-4,5e-5,5e-6,5e-7,5e-8,5e-9,5e-10,5e-11,5e-12,5e-13,5e-14,5e-15};
+    inline void write() {
+        fwrite(buf, sizeof(char), ps - buf, stdout);
+        ps = buf;
+    }
+    inline void oc(char c) {
+        *(ps++) = c;
+        if (ps == pe) write();
+    }
+    inline void os(char *s) {
+        for (int i = 0; s[i]; ++i) oc(s[i]);
+    }
+    template&lt;class T&gt;
+    inline void oi(T x, char bc = '\n') {
+        if (x &lt; 0) oc('-'), x = -x;
+        int len = 0;
+        if (!x) tmp[len++] = '0';
+        while (x) tmp[len++] = x % 10 + '0', x /= 10;
+        while (len)  oc(tmp[--len]);
+        oc(bc);
+    }
+    void of(double x, int fix = 8, char bc = '\n') {
+        x += dx[fix];
+        if (x &lt; 0) oc('-'), x = -x;
+        oi((LL)x, '.');
+        x -= (LL)x;
+        while (fix--) {
+            x *= 10;
+            oc('0' + (int)x);
+            x -= (int)x;
+        }
+        oc(bc);
+    }
+    ~Quick_Out() {
+        write();
+    }
+} Out;
+</code></pre><h3 id="预处理优化"><a name="预处理优化" href="#预处理优化"></a>预处理优化</h3><p>// 除了高位数组优化,取模优化外的优化……<br>// xjb优化,似乎可以快一倍……暴力必备神器</p><pre><code data-origin="<pre><code>#pragma GCC optimize(&quot;Ofast,unroll-loops,no-stack-protector,unsafe-math-optimizations&quot;)
+#pragma GCC target(&quot;avx&quot;)
+</code></pre>">#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,unsafe-math-optimizations")
+#pragma GCC target("avx")
+</code></pre><h3 id="流水线作业的贪心"><a name="流水线作业的贪心" href="#流水线作业的贪心"></a>流水线作业的贪心</h3><p>定义完成一个零件需要很多步，每一步只能在上一步完成后才能进行，并且每一步只能同时处理一个零件。也就是说，在第<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-1-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-1" style="width: 0.483em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.383em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.634em 1000em 2.634em -0.471em); top: -2.459em; left: 0em;"><span class="mrow" id="MathJax-Span-2"><span class="mi" id="MathJax-Span-3" style="font-family: MathJax_Math; font-style: italic;">i</span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.953em; vertical-align: -0.08em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-1">i</script></span>步的当前零件完成后，扔进第<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-2-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-4" style="width: 2.55em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.077em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.848em 1000em 2.924em -0.471em); top: -2.678em; left: 0em;"><span class="mrow" id="MathJax-Span-5"><span class="mi" id="MathJax-Span-6" style="font-family: MathJax_Math; font-style: italic;">i</span><span class="mo" id="MathJax-Span-7" style="font-family: MathJax_Main; padding-left: 0.222em;">+</span><span class="mn" id="MathJax-Span-8" style="font-family: MathJax_Main; padding-left: 0.222em;">1</span></span><span style="display: inline-block; width: 0px; height: 2.678em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.046em; vertical-align: -0.167em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-2">i+1</script></span>步的队列中，然后拿出第<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-3-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-9" style="width: 0.483em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.383em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.634em 1000em 2.634em -0.471em); top: -2.459em; left: 0em;"><span class="mrow" id="MathJax-Span-10"><span class="mi" id="MathJax-Span-11" style="font-family: MathJax_Math; font-style: italic;">i</span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.953em; vertical-align: -0.08em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-3">i</script></span>步的队顶零件处理。求总加工时间。<br>定义零件<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-4-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-12" style="width: 2.417em; display: inline-block;"><span style="display: inline-block; position: relative; width: 1.967em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.798em 1000em 3.036em -0.457em); top: -2.678em; left: 0em;"><span class="mrow" id="MathJax-Span-13"><span class="mi" id="MathJax-Span-14" style="font-family: MathJax_Math; font-style: italic;">A</span><span class="mo" id="MathJax-Span-15" style="font-family: MathJax_Main;">,</span><span class="mi" id="MathJax-Span-16" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em;">B</span></span><span style="display: inline-block; width: 0px; height: 2.678em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.244em; vertical-align: -0.303em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-4">A,B</script></span>，当且仅当<strong>考虑仅有这两个零件，先完成<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-5-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-17" style="width: 0.95em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.765em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.579em 1000em 2.623em -0.457em); top: -2.459em; left: 0em;"><span class="mrow" id="MathJax-Span-18"><span class="mi" id="MathJax-Span-19" style="font-family: MathJax_Math; font-style: italic;">A</span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.007em; vertical-align: -0.067em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-5">A</script></span>后完成<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-6-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-20" style="width: 0.95em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.765em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.612em 1000em 2.623em -0.457em); top: -2.459em; left: 0em;"><span class="mrow" id="MathJax-Span-21"><span class="mi" id="MathJax-Span-22" style="font-family: MathJax_Math; font-style: italic;">B</span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.967em; vertical-align: -0.067em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-6">B</script></span>的用时小于先完成<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-7-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-23" style="width: 0.95em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.765em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.612em 1000em 2.623em -0.457em); top: -2.459em; left: 0em;"><span class="mrow" id="MathJax-Span-24"><span class="mi" id="MathJax-Span-25" style="font-family: MathJax_Math; font-style: italic;">B</span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.967em; vertical-align: -0.067em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-7">B</script></span>后完成<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-8-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-26" style="width: 0.95em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.765em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.579em 1000em 2.623em -0.457em); top: -2.459em; left: 0em;"><span class="mrow" id="MathJax-Span-27"><span class="mi" id="MathJax-Span-28" style="font-family: MathJax_Math; font-style: italic;">A</span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.007em; vertical-align: -0.067em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-8">A</script></span>的用时</strong>时<span>$A<b$< span="">，然后依此排序，按顺序贪心计算时间即可。</b$<></span></p><h3 id="dp优化"><a name="dp优化" href="#dp优化"></a>DP优化</h3><h5 id="经典案例"><a name="经典案例" href="#经典案例"></a>经典案例</h5><p>小<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-9-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-29" style="width: 1.15em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.929em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.612em 1000em 2.623em -0.461em); top: -2.459em; left: 0em;"><span class="mrow" id="MathJax-Span-30"><span class="mi" id="MathJax-Span-31" style="font-family: MathJax_Math; font-style: italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.085em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.967em; vertical-align: -0.067em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-9">N</script></span>手上有一个空序列,定义变量<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-10-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-32" style="width: 3.217em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.623em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.809em 1000em 2.864em -0.442em); top: -2.678em; left: 0em;"><span class="mrow" id="MathJax-Span-33"><span class="mi" id="MathJax-Span-34" style="font-family: MathJax_Math; font-style: italic;">C<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.045em;"></span></span><span class="mo" id="MathJax-Span-35" style="font-family: MathJax_Main; padding-left: 0.278em;">=</span><span class="mn" id="MathJax-Span-36" style="font-family: MathJax_Main; padding-left: 0.278em;">0</span></span><span style="display: inline-block; width: 0px; height: 2.678em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.02em; vertical-align: -0.094em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-10">C=0</script></span>.小<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-11-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-37" style="width: 0.817em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.656em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.612em 1000em 2.645em -0.435em); top: -2.459em; left: 0em;"><span class="mrow" id="MathJax-Span-38"><span class="mi" id="MathJax-Span-39" style="font-family: MathJax_Math; font-style: italic;">J<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.078em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.993em; vertical-align: -0.094em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-11">J</script></span>从左往右依次把序列中的数取出,放到小<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-12-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-40" style="width: 1.15em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.929em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.612em 1000em 2.623em -0.461em); top: -2.459em; left: 0em;"><span class="mrow" id="MathJax-Span-41"><span class="mi" id="MathJax-Span-42" style="font-family: MathJax_Math; font-style: italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.085em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.967em; vertical-align: -0.067em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-12">N</script></span>手上序列的最右边,如果放完之后,整个序列的混乱度超过了<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-13-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-43" style="width: 1.35em; display: inline-block;"><span style="display: inline-block; position: relative; width: 1.093em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.612em 1000em 2.623em -0.457em); top: -2.459em; left: 0em;"><span class="mrow" id="MathJax-Span-44"><span class="mi" id="MathJax-Span-45" style="font-family: MathJax_Math; font-style: italic;">M<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.081em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.967em; vertical-align: -0.067em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-13">M</script></span>,小<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-14-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-46" style="width: 1.15em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.929em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.612em 1000em 2.623em -0.461em); top: -2.459em; left: 0em;"><span class="mrow" id="MathJax-Span-47"><span class="mi" id="MathJax-Span-48" style="font-family: MathJax_Math; font-style: italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.085em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.967em; vertical-align: -0.067em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-14">N</script></span>就会把手上的所有数全部扔掉,然后令<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-15-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-49" style="width: 5.617em; display: inline-block;"><span style="display: inline-block; position: relative; width: 4.59em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.809em 1000em 2.924em -0.442em); top: -2.678em; left: 0em;"><span class="mrow" id="MathJax-Span-50"><span class="mi" id="MathJax-Span-51" style="font-family: MathJax_Math; font-style: italic;">C<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.045em;"></span></span><span class="mo" id="MathJax-Span-52" style="font-family: MathJax_Main; padding-left: 0.278em;">=</span><span class="mi" id="MathJax-Span-53" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em;">C<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.045em;"></span></span><span class="mo" id="MathJax-Span-54" style="font-family: MathJax_Main; padding-left: 0.222em;">+</span><span class="mn" id="MathJax-Span-55" style="font-family: MathJax_Main; padding-left: 0.222em;">1</span></span><span style="display: inline-block; width: 0px; height: 2.678em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.093em; vertical-align: -0.167em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-15">C=C+1</script></span>.<br>定义一个长度为<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-16-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-56" style="width: 1.15em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.929em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.612em 1000em 2.623em -0.461em); top: -2.459em; left: 0em;"><span class="mrow" id="MathJax-Span-57"><span class="mi" id="MathJax-Span-58" style="font-family: MathJax_Math; font-style: italic;">K<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.04em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.967em; vertical-align: -0.067em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-16">K</script></span>序列的混乱度<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-17-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-59" style="width: 9.683em; display: inline-block;"><span style="display: inline-block; position: relative; width: 7.923em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.554em 1000em 3.135em -0.44em); top: -2.678em; left: 0em;"><span class="mrow" id="MathJax-Span-60"><span class="mi" id="MathJax-Span-61" style="font-family: MathJax_Math; font-style: italic;">S<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.032em;"></span></span><span class="mo" id="MathJax-Span-62" style="font-family: MathJax_Main; padding-left: 0.278em;">=</span><span class="munderover" id="MathJax-Span-63" style="padding-left: 0.278em;"><span style="display: inline-block; position: relative; width: 2.315em; height: 0px;"><span style="position: absolute; clip: rect(1.818em 1000em 3.146em -0.436em); top: -2.732em; left: 0em;"><span class="mo" id="MathJax-Span-64" style="font-family: MathJax_Size1; vertical-align: 0em;">∑</span><span style="display: inline-block; width: 0px; height: 2.732em;"></span></span><span style="position: absolute; clip: rect(1.648em 1000em 2.459em -0.47em); top: -2.772em; left: 1.093em;"><span class="texatom" id="MathJax-Span-65"><span class="mrow" id="MathJax-Span-66"><span class="mi" id="MathJax-Span-67" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic;">K<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.028em;"></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.295em;"></span></span><span style="position: absolute; clip: rect(1.715em 1000em 2.521em -0.477em); top: -2.064em; left: 1.093em;"><span class="texatom" id="MathJax-Span-68"><span class="mrow" id="MathJax-Span-69"><span class="mi" id="MathJax-Span-70" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic;">i</span><span class="mo" id="MathJax-Span-71" style="font-size: 70.7%; font-family: MathJax_Main;">=</span><span class="mn" id="MathJax-Span-72" style="font-size: 70.7%; font-family: MathJax_Main;">1</span></span></span><span style="display: inline-block; width: 0px; height: 2.35em;"></span></span></span></span><span class="mi" id="MathJax-Span-73" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em;">B</span><span class="mi" id="MathJax-Span-74" style="font-family: MathJax_Math; font-style: italic;">i</span><span class="mo" id="MathJax-Span-75" style="font-family: MathJax_Main; padding-left: 0.222em;">×</span><span class="mi" id="MathJax-Span-76" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em;">V<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.186em;"></span></span><span class="mi" id="MathJax-Span-77" style="font-family: MathJax_Math; font-style: italic;">i</span></span><span style="display: inline-block; width: 0px; height: 2.678em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.662em; vertical-align: -0.424em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-17">S=\sum_{i=1}^{K}Bi×Vi</script></span>,其中<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-18-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-78" style="width: 1.417em; display: inline-block;"><span style="display: inline-block; position: relative; width: 1.148em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.612em 1000em 2.634em -0.457em); top: -2.459em; left: 0em;"><span class="mrow" id="MathJax-Span-79"><span class="mi" id="MathJax-Span-80" style="font-family: MathJax_Math; font-style: italic;">B</span><span class="mi" id="MathJax-Span-81" style="font-family: MathJax_Math; font-style: italic;">i</span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.98em; vertical-align: -0.08em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-18">Bi</script></span>表示序列中第<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-19-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-82" style="width: 0.483em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.383em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.634em 1000em 2.634em -0.471em); top: -2.459em; left: 0em;"><span class="mrow" id="MathJax-Span-83"><span class="mi" id="MathJax-Span-84" style="font-family: MathJax_Math; font-style: italic;">i</span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.953em; vertical-align: -0.08em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-19">i</script></span>小的数,<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-20-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-85" style="width: 1.017em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.82em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.612em 1000em 2.645em -0.44em); top: -2.459em; left: 0em;"><span class="mrow" id="MathJax-Span-86"><span class="mi" id="MathJax-Span-87" style="font-family: MathJax_Math; font-style: italic;">V<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.186em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.993em; vertical-align: -0.094em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-20">V</script></span>为一个给定的序列.<br>求加入每个数之后,<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-21-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-88" style="width: 0.95em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.765em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.59em 1000em 2.645em -0.442em); top: -2.459em; left: 0em;"><span class="mrow" id="MathJax-Span-89"><span class="mi" id="MathJax-Span-90" style="font-family: MathJax_Math; font-style: italic;">C<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.045em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.02em; vertical-align: -0.094em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-21">C</script></span>是多少.<br>直接从右端点二分会退化至<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-22-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-91" style="width: 3.617em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.951em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.461em 1000em 2.828em -0.471em); top: -2.459em; left: 0em;"><span class="mrow" id="MathJax-Span-92"><span class="msubsup" id="MathJax-Span-93"><span style="display: inline-block; position: relative; width: 1.059em; height: 0px;"><span style="position: absolute; clip: rect(1.853em 1000em 2.634em -0.471em); top: -2.459em; left: 0em;"><span class="mi" id="MathJax-Span-94" style="font-family: MathJax_Math; font-style: italic;">n</span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span><span style="position: absolute; top: -2.713em; left: 0.601em;"><span class="texatom" id="MathJax-Span-95"><span class="mrow" id="MathJax-Span-96"><span class="mn" id="MathJax-Span-97" style="font-size: 70.7%; font-family: MathJax_Main;">2</span></span></span><span style="display: inline-block; width: 0px; height: 2.35em;"></span></span></span></span><span class="mi" id="MathJax-Span-98" style="font-family: MathJax_Math; font-style: italic;">l</span><span class="mi" id="MathJax-Span-99" style="font-family: MathJax_Math; font-style: italic;">o</span><span class="mi" id="MathJax-Span-100" style="font-family: MathJax_Math; font-style: italic;">g<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="mi" id="MathJax-Span-101" style="font-family: MathJax_Math; font-style: italic;">n</span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.401em; vertical-align: -0.317em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-22">n^{2}logn</script></span>,采用倍增+二分则是<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-23-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-102" style="width: 3.683em; display: inline-block;"><span style="display: inline-block; position: relative; width: 3.005em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.461em 1000em 2.828em -0.471em); top: -2.459em; left: 0em;"><span class="mrow" id="MathJax-Span-103"><span class="mi" id="MathJax-Span-104" style="font-family: MathJax_Math; font-style: italic;">n</span><span class="mi" id="MathJax-Span-105" style="font-family: MathJax_Math; font-style: italic;">l</span><span class="mi" id="MathJax-Span-106" style="font-family: MathJax_Math; font-style: italic;">o</span><span class="msubsup" id="MathJax-Span-107"><span style="display: inline-block; position: relative; width: 1em; height: 0px;"><span style="position: absolute; clip: rect(1.853em 1000em 2.828em -0.482em); top: -2.459em; left: 0em;"><span class="mi" id="MathJax-Span-108" style="font-family: MathJax_Math; font-style: italic;">g<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span><span style="position: absolute; top: -2.713em; left: 0.543em;"><span class="texatom" id="MathJax-Span-109"><span class="mrow" id="MathJax-Span-110"><span class="mn" id="MathJax-Span-111" style="font-size: 70.7%; font-family: MathJax_Main;">2</span></span></span><span style="display: inline-block; width: 0px; height: 2.35em;"></span></span></span></span><span class="mi" id="MathJax-Span-112" style="font-family: MathJax_Math; font-style: italic;">n</span></span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.401em; vertical-align: -0.317em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-23">nlog^{2}n</script></span>(先把区间长度用倍增确定在<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-24-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-113" style="width: 3.95em; display: inline-block;"><span style="display: inline-block; position: relative; width: 3.224em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.63em 1000em 2.842em -0.442em); top: -2.678em; left: 0em;"><span class="mrow" id="MathJax-Span-114"><span class="msubsup" id="MathJax-Span-115"><span style="display: inline-block; position: relative; width: 1.004em; height: 0px;"><span style="position: absolute; clip: rect(1.848em 1000em 2.842em -0.442em); top: -2.678em; left: 0em;"><span class="mn" id="MathJax-Span-116" style="font-family: MathJax_Main;">2</span><span style="display: inline-block; width: 0px; height: 2.678em;"></span></span><span style="position: absolute; top: -2.688em; left: 0.546em;"><span class="texatom" id="MathJax-Span-117"><span class="mrow" id="MathJax-Span-118"><span class="mi" id="MathJax-Span-119" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic;">k</span></span></span><span style="display: inline-block; width: 0px; height: 2.295em;"></span></span></span></span><span class="mtext" id="MathJax-Span-120" style="font-family: MathJax_Main;">&nbsp;</span><span class="msubsup" id="MathJax-Span-121"><span style="display: inline-block; position: relative; width: 1.933em; height: 0px;"><span style="position: absolute; clip: rect(1.848em 1000em 2.842em -0.442em); top: -2.678em; left: 0em;"><span class="mn" id="MathJax-Span-122" style="font-family: MathJax_Main;">2</span><span style="display: inline-block; width: 0px; height: 2.678em;"></span></span><span style="position: absolute; top: -2.743em; left: 0.546em;"><span class="texatom" id="MathJax-Span-123"><span class="mrow" id="MathJax-Span-124"><span class="mi" id="MathJax-Span-125" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic;">k</span><span class="mo" id="MathJax-Span-126" style="font-size: 70.7%; font-family: MathJax_Main;">+</span><span class="mn" id="MathJax-Span-127" style="font-size: 70.7%; font-family: MathJax_Main;">1</span></span></span><span style="display: inline-block; width: 0px; height: 2.35em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.678em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.211em; vertical-align: -0.067em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-24">2^{k}~2^{k+1}</script></span>区间,然后二分确定答案)</p><p>考虑答案的值的斜率是单调的,可以二分斜率,使得dp出的值刚好是要求情况下的<br>注意到可能有一段区间的斜率都是符合要求情况的,需要求出极值</p><h5 id="注意dp方程的后效性"><a name="注意dp方程的后效性" href="#注意dp方程的后效性"></a>注意DP方程的后效性</h5><p>单调队列优化：<br>有些DP方程可以转化成</p><pre><code data-origin="<pre><code>DP[i]=f[j]+x[i]
+</code></pre>">DP[i]=f[j]+x[i]
+</code></pre><p>的形式，其中f[j]中保存了只与j相关的量。<br>这样的DP方程我们可以用单调队列进行优化</p><p>斜率优化：<br>对于这样的一类DP方程</p><pre><code data-origin="<pre><code>f[i]=min{a[i]*x[j]+b[j]}
+</code></pre>">f[i]=min{a[i]*x[j]+b[j]}
+</code></pre><p>a[i]是和i有关的函数，x[j],b[j]是和j有关的函数或常数<br>我们可以把它改写成这个样子</p><pre><code data-origin="<pre><code>-a[i]*x[j]+f[i]=b[j]
+</code></pre>">-a[i]*x[j]+f[i]=b[j]
+</code></pre><p>把-a[i]看做斜率，f[i]看做截距，每一个决策相当于平面上一个点，最优决策显然在平面点集的凸包上，要求f[i]的最小值，就相当于将一条斜率为-a[i]的直线不断向上平移，碰到的第一个点就是截距最小的点，也就是f[i]的最优决策，如果横坐标和斜率均单调，我们就可以维护一个单调队列（斜率是单调的，即最优解也是单调的（类似于决策单调）），队首指针不断往后走，每个点只会访问一次，复杂度为O(n)<br>如果均不单调，有时我们可以排序使得其中一个单调<br>或者维护一个单调的斜率，对每一个值在上面二分答案<br>另：如果方程是</p><pre><code data-origin="<pre><code>f[i]=min{a[i]*x[j]+b[i]*y[j]}
+</code></pre>">f[i]=min{a[i]*x[j]+b[i]*y[j]}
+</code></pre><p>的话，可以将其变为</p><pre><code data-origin="<pre><code>f[i]=min(a[i]/b[i]*x[j]+y[j])*b[i]
+</code></pre>">f[i]=min(a[i]/b[i]*x[j]+y[j])*b[i]
+</code></pre><p>g[i,j]表示两点构成的斜率表达式<br>1，用一个单调队列来维护解集。<br>2，假设队列中从头到尾已经有元素a b c。那么当d要入队的时候，我们维护队列的上凸性质，即如果g[d,c]&lt;g[c,b]，那么就将c点删除。直到找到g[d,x]&gt;=g[x,y]为止，并将d点加入在该位置中。<br>3，求解时候，从队头开始，如果已有元素a b c，当i点要求解时，如果g[b,a]&lt;sum[i]，那么说明b点比a点更优，a点可以排除，于是a出队。最后dp[i]=getDp(q[head])。</p><p>四边形不等式优化：<br>最有代价用<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-25-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-128" style="width: 2.817em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.295em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.764em 1000em 3.092em -0.459em); top: -2.678em; left: 0em;"><span class="mrow" id="MathJax-Span-129"><span class="mi" id="MathJax-Span-130" style="font-family: MathJax_Math; font-style: italic;">d<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="mo" id="MathJax-Span-131" style="font-family: MathJax_Main;">[</span><span class="mi" id="MathJax-Span-132" style="font-family: MathJax_Math; font-style: italic;">i</span><span class="mo" id="MathJax-Span-133" style="font-family: MathJax_Main;">,</span><span class="mi" id="MathJax-Span-134" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em;">j</span><span class="mo" id="MathJax-Span-135" style="font-family: MathJax_Main;">]</span></span><span style="display: inline-block; width: 0px; height: 2.678em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.353em; vertical-align: -0.372em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-25">d[i,j]</script></span>表示 <span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-26-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-136" style="width: 23.95em; display: inline-block;"><span style="display: inline-block; position: relative; width: 19.617em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.764em 1000em 3.092em -0.459em); top: -2.678em; left: 0em;"><span class="mrow" id="MathJax-Span-137"><span class="mi" id="MathJax-Span-138" style="font-family: MathJax_Math; font-style: italic;">d<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="mo" id="MathJax-Span-139" style="font-family: MathJax_Main;">[</span><span class="mi" id="MathJax-Span-140" style="font-family: MathJax_Math; font-style: italic;">i</span><span class="mo" id="MathJax-Span-141" style="font-family: MathJax_Main;">,</span><span class="mi" id="MathJax-Span-142" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em;">j</span><span class="mo" id="MathJax-Span-143" style="font-family: MathJax_Main;">]</span><span class="mo" id="MathJax-Span-144" style="font-family: MathJax_Main; padding-left: 0.278em;">=</span><span class="mi" id="MathJax-Span-145" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em;">m</span><span class="mi" id="MathJax-Span-146" style="font-family: MathJax_Math; font-style: italic;">i</span><span class="mi" id="MathJax-Span-147" style="font-family: MathJax_Math; font-style: italic;">n</span><span class="mo" id="MathJax-Span-148" style="font-family: MathJax_Main;">{</span><span class="mi" id="MathJax-Span-149" style="font-family: MathJax_Math; font-style: italic;">d<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="mo" id="MathJax-Span-150" style="font-family: MathJax_Main;">[</span><span class="mi" id="MathJax-Span-151" style="font-family: MathJax_Math; font-style: italic;">i</span><span class="mo" id="MathJax-Span-152" style="font-family: MathJax_Main;">,</span><span class="mi" id="MathJax-Span-153" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em;">k</span><span class="mo" id="MathJax-Span-154" style="font-family: MathJax_Main; padding-left: 0.222em;">−</span><span class="mn" id="MathJax-Span-155" style="font-family: MathJax_Main; padding-left: 0.222em;">1</span><span class="mo" id="MathJax-Span-156" style="font-family: MathJax_Main;">]</span><span class="mo" id="MathJax-Span-157" style="font-family: MathJax_Main; padding-left: 0.222em;">+</span><span class="mi" id="MathJax-Span-158" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em;">d<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="mo" id="MathJax-Span-159" style="font-family: MathJax_Main;">[</span><span class="mi" id="MathJax-Span-160" style="font-family: MathJax_Math; font-style: italic;">k</span><span class="mo" id="MathJax-Span-161" style="font-family: MathJax_Main; padding-left: 0.222em;">+</span><span class="mn" id="MathJax-Span-162" style="font-family: MathJax_Main; padding-left: 0.222em;">1</span><span class="mo" id="MathJax-Span-163" style="font-family: MathJax_Main;">,</span><span class="mi" id="MathJax-Span-164" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em;">j</span><span class="mo" id="MathJax-Span-165" style="font-family: MathJax_Main;">]</span><span class="mo" id="MathJax-Span-166" style="font-family: MathJax_Main;">}</span><span class="mo" id="MathJax-Span-167" style="font-family: MathJax_Main; padding-left: 0.222em;">+</span><span class="mi" id="MathJax-Span-168" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em;">w</span><span class="mo" id="MathJax-Span-169" style="font-family: MathJax_Main;">[</span><span class="mi" id="MathJax-Span-170" style="font-family: MathJax_Math; font-style: italic;">i</span><span class="mo" id="MathJax-Span-171" style="font-family: MathJax_Main;">,</span><span class="mi" id="MathJax-Span-172" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em;">j</span><span class="mo" id="MathJax-Span-173" style="font-family: MathJax_Main;">]</span></span><span style="display: inline-block; width: 0px; height: 2.678em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.353em; vertical-align: -0.372em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-26">d[i,j]=min\{d[i,k-1]+d[k+1,j]\}+w[i,j]</script></span><br>(一维)<span><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-27-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-174" style="width: 12.95em; display: inline-block;"><span style="display: inline-block; position: relative; width: 10.601em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.764em 1000em 3.092em -0.437em); top: -2.678em; left: 0em;"><span class="mrow" id="MathJax-Span-175"><span class="mi" id="MathJax-Span-176" style="font-family: MathJax_Math; font-style: italic;">f<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.06em;"></span></span><span class="mo" id="MathJax-Span-177" style="font-family: MathJax_Main;">[</span><span class="mi" id="MathJax-Span-178" style="font-family: MathJax_Math; font-style: italic;">j</span><span class="mo" id="MathJax-Span-179" style="font-family: MathJax_Main;">]</span><span class="mo" id="MathJax-Span-180" style="font-family: MathJax_Main; padding-left: 0.278em;">=</span><span class="mi" id="MathJax-Span-181" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em;">m</span><span class="mi" id="MathJax-Span-182" style="font-family: MathJax_Math; font-style: italic;">i</span><span class="mi" id="MathJax-Span-183" style="font-family: MathJax_Math; font-style: italic;">n</span><span class="mo" id="MathJax-Span-184" style="font-family: MathJax_Main;">(</span><span class="mi" id="MathJax-Span-185" style="font-family: MathJax_Math; font-style: italic;">f<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.06em;"></span></span><span class="mo" id="MathJax-Span-186" style="font-family: MathJax_Main;">[</span><span class="mi" id="MathJax-Span-187" style="font-family: MathJax_Math; font-style: italic;">i</span><span class="mo" id="MathJax-Span-188" style="font-family: MathJax_Main;">]</span><span class="mo" id="MathJax-Span-189" style="font-family: MathJax_Main; padding-left: 0.222em;">+</span><span class="mi" id="MathJax-Span-190" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em;">w</span><span class="mo" id="MathJax-Span-191" style="font-family: MathJax_Main;">[</span><span class="mi" id="MathJax-Span-192" style="font-family: MathJax_Math; font-style: italic;">i</span><span class="mo" id="MathJax-Span-193" style="font-family: MathJax_Main;">,</span><span class="mi" id="MathJax-Span-194" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em;">j</span><span class="mo" id="MathJax-Span-195" style="font-family: MathJax_Main;">]</span><span class="mo" id="MathJax-Span-196" style="font-family: MathJax_Main;">)</span></span><span style="display: inline-block; width: 0px; height: 2.678em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.353em; vertical-align: -0.372em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-27">f[j] = min(f[i]+w[i,j])</script></span><br>四边形不等式   <span>$w[a,c]+w[b,d]&lt;=w[b,c]+w[a,d](a<b<c<d)$< span=""> 就称其满足凸四边形不等式<br>决策单调性   <span class="mathjax"><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-28-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-197" style="width: 17.483em; display: inline-block;"><span style="display: inline-block; position: relative; width: 14.317em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.714em 1000em 3.092em -0.471em); top: -2.678em; left: 0em;"><span class="mrow" id="MathJax-Span-198"><span class="mi" id="MathJax-Span-199" style="font-family: MathJax_Math; font-style: italic;">w</span><span class="mo" id="MathJax-Span-200" style="font-family: MathJax_Main;">[</span><span class="mi" id="MathJax-Span-201" style="font-family: MathJax_Math; font-style: italic;">i</span><span class="mo" id="MathJax-Span-202" style="font-family: MathJax_Main;">,</span><span class="mi" id="MathJax-Span-203" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em;">j</span><span class="mo" id="MathJax-Span-204" style="font-family: MathJax_Main;">]</span><span class="mo" id="MathJax-Span-205" style="font-family: MathJax_Main; padding-left: 0.278em;">&lt;<span style="font-family: MathJax_Main; font-style: normal; font-weight: normal;">=</span></span><span class="mi" id="MathJax-Span-206" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em;">w</span><span class="mo" id="MathJax-Span-207" style="font-family: MathJax_Main;">[</span><span class="msup" id="MathJax-Span-208"><span style="display: inline-block; position: relative; width: 0.676em; height: 0px;"><span style="position: absolute; clip: rect(1.634em 1000em 2.634em -0.471em); top: -2.459em; left: 0em;"><span class="mi" id="MathJax-Span-209" style="font-family: MathJax_Math; font-style: italic;">i</span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span><span style="position: absolute; top: -2.738em; left: 0.383em;"><span class="mo" id="MathJax-Span-210" style="font-size: 70.7%; font-family: MathJax_Main;">′</span><span style="display: inline-block; width: 0px; height: 2.35em;"></span></span></span></span><span class="mo" id="MathJax-Span-211" style="font-family: MathJax_Main;">,</span><span class="msup" id="MathJax-Span-212" style="padding-left: 0.167em;"><span style="display: inline-block; position: relative; width: 0.731em; height: 0px;"><span style="position: absolute; clip: rect(1.634em 1000em 2.827em -0.504em); top: -2.459em; left: 0em;"><span class="mi" id="MathJax-Span-213" style="font-family: MathJax_Math; font-style: italic;">j</span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span><span style="position: absolute; top: -2.738em; left: 0.437em;"><span class="mo" id="MathJax-Span-214" style="font-size: 70.7%; font-family: MathJax_Main;">′</span><span style="display: inline-block; width: 0px; height: 2.35em;"></span></span></span></span><span class="mo" id="MathJax-Span-215" style="font-family: MathJax_Main;">]</span><span class="mo" id="MathJax-Span-216" style="font-family: MathJax_Main;">(</span><span class="mo" id="MathJax-Span-217" style="font-family: MathJax_Main;">[</span><span class="mi" id="MathJax-Span-218" style="font-family: MathJax_Math; font-style: italic;">i</span><span class="mo" id="MathJax-Span-219" style="font-family: MathJax_Main;">,</span><span class="mi" id="MathJax-Span-220" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em;">j</span><span class="mo" id="MathJax-Span-221" style="font-family: MathJax_Main;">]</span><span class="texatom" id="MathJax-Span-222"><span class="mrow" id="MathJax-Span-223"><span class="mo" id="MathJax-Span-224"><span style="font-family: STIXGeneral, 'Arial Unicode MS', serif; font-size: 82%; font-style: normal; font-weight: normal;">属</span></span></span></span><span class="texatom" id="MathJax-Span-225"><span class="mrow" id="MathJax-Span-226"><span class="mo" id="MathJax-Span-227"><span style="font-family: STIXGeneral, 'Arial Unicode MS', serif; font-size: 82%; font-style: normal; font-weight: normal;">于</span></span></span></span><span class="mo" id="MathJax-Span-228" style="font-family: MathJax_Main;">[</span><span class="msup" id="MathJax-Span-229"><span style="display: inline-block; position: relative; width: 0.676em; height: 0px;"><span style="position: absolute; clip: rect(1.634em 1000em 2.634em -0.471em); top: -2.459em; left: 0em;"><span class="mi" id="MathJax-Span-230" style="font-family: MathJax_Math; font-style: italic;">i</span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span><span style="position: absolute; top: -2.738em; left: 0.383em;"><span class="mo" id="MathJax-Span-231" style="font-size: 70.7%; font-family: MathJax_Main;">′</span><span style="display: inline-block; width: 0px; height: 2.35em;"></span></span></span></span><span class="mo" id="MathJax-Span-232" style="font-family: MathJax_Main;">,</span><span class="msup" id="MathJax-Span-233" style="padding-left: 0.167em;"><span style="display: inline-block; position: relative; width: 0.731em; height: 0px;"><span style="position: absolute; clip: rect(1.634em 1000em 2.827em -0.504em); top: -2.459em; left: 0em;"><span class="mi" id="MathJax-Span-234" style="font-family: MathJax_Math; font-style: italic;">j</span><span style="display: inline-block; width: 0px; height: 2.459em;"></span></span><span style="position: absolute; top: -2.738em; left: 0.437em;"><span class="mo" id="MathJax-Span-235" style="font-size: 70.7%; font-family: MathJax_Main;">′</span><span style="display: inline-block; width: 0px; height: 2.35em;"></span></span></span></span><span class="mo" id="MathJax-Span-236" style="font-family: MathJax_Main;">]</span><span class="mo" id="MathJax-Span-237" style="font-family: MathJax_Main;">)</span></span><span style="display: inline-block; width: 0px; height: 2.678em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.414em; vertical-align: -0.372em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-28">w[i,j]<=w[i',j']   ([i,j]属于[i',j'])</script></span> 既 <span class="mathjax">$i'&lt;=i<j<=j'$< span=""><br>//一般需证明 <span class="mathjax"><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-29-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-238" style="width: 26.017em; display: inline-block;"><span style="display: inline-block; position: relative; width: 21.311em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.764em 1000em 3.092em -0.471em); top: -2.678em; left: 0em;"><span class="mrow" id="MathJax-Span-239"><span class="mi" id="MathJax-Span-240" style="font-family: MathJax_Math; font-style: italic;">w</span><span class="mo" id="MathJax-Span-241" style="font-family: MathJax_Main;">[</span><span class="mi" id="MathJax-Span-242" style="font-family: MathJax_Math; font-style: italic;">i</span><span class="mo" id="MathJax-Span-243" style="font-family: MathJax_Main;">,</span><span class="mi" id="MathJax-Span-244" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em;">j</span><span class="mo" id="MathJax-Span-245" style="font-family: MathJax_Main;">]</span><span class="mo" id="MathJax-Span-246" style="font-family: MathJax_Main; padding-left: 0.222em;">+</span><span class="mi" id="MathJax-Span-247" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em;">w</span><span class="mo" id="MathJax-Span-248" style="font-family: MathJax_Main;">[</span><span class="mi" id="MathJax-Span-249" style="font-family: MathJax_Math; font-style: italic;">i</span><span class="mo" id="MathJax-Span-250" style="font-family: MathJax_Main; padding-left: 0.222em;">+</span><span class="mn" id="MathJax-Span-251" style="font-family: MathJax_Main; padding-left: 0.222em;">1</span><span class="mo" id="MathJax-Span-252" style="font-family: MathJax_Main;">,</span><span class="mi" id="MathJax-Span-253" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em;">j</span><span class="mo" id="MathJax-Span-254" style="font-family: MathJax_Main; padding-left: 0.222em;">+</span><span class="mn" id="MathJax-Span-255" style="font-family: MathJax_Main; padding-left: 0.222em;">1</span><span class="mo" id="MathJax-Span-256" style="font-family: MathJax_Main;">]</span><span class="mo" id="MathJax-Span-257" style="font-family: MathJax_Main; padding-left: 0.278em;">&lt;<span style="font-family: MathJax_Main; font-style: normal; font-weight: normal;">=</span></span><span class="mi" id="MathJax-Span-258" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em;">w</span><span class="mo" id="MathJax-Span-259" style="font-family: MathJax_Main;">[</span><span class="mi" id="MathJax-Span-260" style="font-family: MathJax_Math; font-style: italic;">i</span><span class="mo" id="MathJax-Span-261" style="font-family: MathJax_Main; padding-left: 0.222em;">+</span><span class="mn" id="MathJax-Span-262" style="font-family: MathJax_Main; padding-left: 0.222em;">1</span><span class="mo" id="MathJax-Span-263" style="font-family: MathJax_Main;">,</span><span class="mi" id="MathJax-Span-264" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em;">j</span><span class="mo" id="MathJax-Span-265" style="font-family: MathJax_Main;">]</span><span class="mo" id="MathJax-Span-266" style="font-family: MathJax_Main; padding-left: 0.222em;">+</span><span class="mi" id="MathJax-Span-267" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em;">w</span><span class="mo" id="MathJax-Span-268" style="font-family: MathJax_Main;">[</span><span class="mi" id="MathJax-Span-269" style="font-family: MathJax_Math; font-style: italic;">i</span><span class="mo" id="MathJax-Span-270" style="font-family: MathJax_Main;">,</span><span class="mi" id="MathJax-Span-271" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em;">j</span><span class="mo" id="MathJax-Span-272" style="font-family: MathJax_Main; padding-left: 0.222em;">+</span><span class="mn" id="MathJax-Span-273" style="font-family: MathJax_Main; padding-left: 0.222em;">1</span><span class="mo" id="MathJax-Span-274" style="font-family: MathJax_Main;">]</span></span><span style="display: inline-block; width: 0px; height: 2.678em;"></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.353em; vertical-align: -0.372em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-29">w[i,j]+w[i+1,j+1]<=w[i+1,j]+w[i,j+1]</script></span><br>//max时不等号取反……</j<=j'$<></span></b<c<d)$<></span></p><p>于是有以下三个定理<br>定理一： 如果w同时满足四边形不等式 和 决策单调性 ,则d也满足四边形不等式<br>定理二：当定理一的条件满足时，让d[i,j]取最小值的k为K[i,j]，则K[i,j-1]&lt;=K[i,j]&lt;=K[i+1,j]<br>定理三：w为凸当且仅当w[i,j]+w[i+1,j+1]&lt;=w[i+1,j]+w[i,j+1]<br>由定理三知 判断w是否为凸即判断 w[i,j+1]-w[i,j]的值随着i的增加是否递减<br>于是求K值的时候K[i,j]只和K[i+1,j] 和 K[i,j-1]有关，所以 可以以i-j递增为顺序递推各个状态值最终求得结果</p><p>常见方式：<br>s为决策区间<br>dp[i][j] = min{dp[i][k] + dp[k + 1][j] + w[i][j] }, i &lt;= k &lt;= j - 1<br>s[i][j - 1] &lt;= s[i][j] &lt;= s[i + 1][j] //s[i][i] = i;</p><p>dp[i][j] = min{dp[i - 1][k] + w[k + 1][j]}, i - 1 &lt;= k &lt;= j - 1<br>s[i - 1][j] &lt;= s[i][j] &lt;= s[i][j + 1] //s[i][n + 1] = n;</p><p>dp[i][j] = min{dp[k][j - 1] + w[k + 1][j]}, j - 1 &lt;= k &lt;= i - 1<br>s[i][j - 1] &lt;= s[i][j] &lt;= s[i + 1][j] //s[n + 1][i] = n;</p><h3 id="动态维护凸壳"><a name="动态维护凸壳" href="#动态维护凸壳"></a>动态维护凸壳</h3><pre><code data-origin="<pre><code>//使用多个时HullDynamic，调用指针维护
+const LL is_query = - (1LL &amp;lt;&amp;lt; 62); // 询问标记
+struct Line {
+    LL k, b; // kx + b
+    mutable function&amp;lt;const Line*()&amp;gt; succ;
+    bool operator &amp;lt; (const Line &amp;amp;rhs) const {
+        if (rhs.b != is_query) return k &amp;lt; rhs.k;
+        const Line* s = succ();
+        if (!s) return 0;
+        LL x = rhs.k;
+        return 1.0L * b - s-&amp;gt;b &amp;lt; 1.0L * (s-&amp;gt;k - k) * x;
+    }
+};
+struct HullDynamic : public multiset&amp;lt;Line&amp;gt; { // 上凸壳求最大值(维护下凸壳的话插入为insert(-k,-b),询问为-eval(x))
+    bool bad(iterator y) {
+        auto z = next(y);
+        if (y == begin()) {
+            if (z == end()) return 0;
+            return y-&amp;gt;k == z-&amp;gt;k &amp;amp;&amp;amp; y-&amp;gt;b &amp;lt;= z-&amp;gt;b;
+        }
+        auto x = prev(y);
+        if (z == end()) return y-&amp;gt;k == x-&amp;gt;k &amp;amp;&amp;amp; y-&amp;gt;b &amp;lt;= x-&amp;gt;b;
+        return 1.0L * (x-&amp;gt;b - y-&amp;gt;b) * (z-&amp;gt;k - y-&amp;gt;k) &amp;gt;= 1.0L * (y-&amp;gt;b - z-&amp;gt;b) * (y-&amp;gt;k - x-&amp;gt;k);
+    }
+    void insert_line(LL k, LL b) {
+        auto y = insert({k, b});
+        y-&amp;gt;succ = [=] { return next(y) == end() ? 0 : &amp;amp;*next(y); };
+        if (bad(y)) { erase(y); return; }
+        while (next(y) != end() &amp;amp;&amp;amp; bad(next(y))) erase(next(y));
+        while (y != begin() &amp;amp;&amp;amp; bad(prev(y))) erase(prev(y));
+    }
+    LL eval(LL x) { // 询问x处的值
+        Line u = {x, is_query};
+        auto l = *lower_bound(u);
+        return l.k * x + l.b;
+    }
+};
+</code></pre>">//使用多个时HullDynamic，调用指针维护
+const LL is_query = - (1LL &lt;&lt; 62); // 询问标记
+struct Line {
+    LL k, b; // kx + b
+    mutable function&lt;const Line*()&gt; succ;
+    bool operator &lt; (const Line &amp;rhs) const {
+        if (rhs.b != is_query) return k &lt; rhs.k;
+        const Line* s = succ();
+        if (!s) return 0;
+        LL x = rhs.k;
+        return 1.0L * b - s-&gt;b &lt; 1.0L * (s-&gt;k - k) * x;
+    }
+};
+struct HullDynamic : public multiset&lt;Line&gt; { // 上凸壳求最大值(维护下凸壳的话插入为insert(-k,-b),询问为-eval(x))
+    bool bad(iterator y) {
+        auto z = next(y);
+        if (y == begin()) {
+            if (z == end()) return 0;
+            return y-&gt;k == z-&gt;k &amp;&amp; y-&gt;b &lt;= z-&gt;b;
+        }
+        auto x = prev(y);
+        if (z == end()) return y-&gt;k == x-&gt;k &amp;&amp; y-&gt;b &lt;= x-&gt;b;
+        return 1.0L * (x-&gt;b - y-&gt;b) * (z-&gt;k - y-&gt;k) &gt;= 1.0L * (y-&gt;b - z-&gt;b) * (y-&gt;k - x-&gt;k);
+    }
+    void insert_line(LL k, LL b) {
+        auto y = insert({k, b});
+        y-&gt;succ = [=] { return next(y) == end() ? 0 : &amp;*next(y); };
+        if (bad(y)) { erase(y); return; }
+        while (next(y) != end() &amp;&amp; bad(next(y))) erase(next(y));
+        while (y != begin() &amp;&amp; bad(prev(y))) erase(prev(y));
+    }
+    LL eval(LL x) { // 询问x处的值
+        Line u = {x, is_query};
+        auto l = *lower_bound(u);
+        return l.k * x + l.b;
+    }
+};
+</code></pre><h3 id="扩栈"><a name="扩栈" href="#扩栈"></a>扩栈</h3><pre><code data-origin="<pre><code>#pragma comment(linker, &quot;/STACK:10240000,10240000&quot;)
+
+//64−bit
+    int size = 1 &amp;lt;&amp;lt; 20;//256M
+    char *p = (char *)malloc(size) + size;
+    __asm__(&quot;movq %0, %%rsp\n&quot; :: &quot;r&quot;(p));
+//32−bit
+    int size = 1 &amp;lt;&amp;lt; 20;//256M
+    char *p = (char *)malloc(size) + size;
+    __asm__(&quot;movl %0, %%esp\n&quot; :: &quot;r&quot;(p));
+</code></pre>">#pragma comment(linker, "/STACK:10240000,10240000")
+
+//64−bit
+    int size = 1 &lt;&lt; 20;//256M
+    char *p = (char *)malloc(size) + size;
+    __asm__("movq %0, %%rsp\n" :: "r"(p));
+//32−bit
+    int size = 1 &lt;&lt; 20;//256M
+    char *p = (char *)malloc(size) + size;
+    __asm__("movl %0, %%esp\n" :: "r"(p));
+</code></pre><h2 id="java"><a name="java" href="#java"></a>Java</h2><h3 id="格式模板"><a name="格式模板" href="#格式模板"></a>格式模板</h3><pre><code data-origin="<pre><code>import java.io.*;
+import java.util.*;
+import java.math.*;
+
+public class Main {
+    public static void main(String[] args) {
+        InputStream inputStream = System.in;
+        OutputStream outputStream = System.out;
+        InputReader cin = new InputReader(inputStream);
+        PrintWriter cout = new PrintWriter(outputStream);
+        int T = cin.nextInt();
+        for (int i = 1; i &amp;lt;= T; i++) {
+            Task ans = new Task();
+            ans.solve(i,cin, cout);
+        }
+        cout.close();
+    }
+    static class Task {
+        public void solve(int id,InputReader in, PrintWriter out) {
+
+        }
+    }
+
+    static class InputReader {
+        public BufferedReader reader;
+        public StringTokenizer tokenizer;
+
+        public InputReader(InputStream stream) {
+            reader = new BufferedReader(new InputStreamReader(stream), 32768);
+            tokenizer = null;
+        }
+
+        public String next() {
+            while (tokenizer == null || !tokenizer.hasMoreTokens()) {
+                try {
+                    tokenizer = new StringTokenizer(reader.readLine());
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            return tokenizer.nextToken();
+        }
+
+        public int nextInt() {
+            return Integer.parseInt(next());
+        }
+        public double nextDouble() {
+            return Double.parseDouble(next());
+        }
+    }
+}
+</code></pre>">import java.io.*;
+import java.util.*;
+import java.math.*;
+
+public class Main {
+    public static void main(String[] args) {
+        InputStream inputStream = System.in;
+        OutputStream outputStream = System.out;
+        InputReader cin = new InputReader(inputStream);
+        PrintWriter cout = new PrintWriter(outputStream);
+        int T = cin.nextInt();
+        for (int i = 1; i &lt;= T; i++) {
+            Task ans = new Task();
+            ans.solve(i,cin, cout);
+        }
+        cout.close();
+    }
+    static class Task {
+        public void solve(int id,InputReader in, PrintWriter out) {
+
+        }
+    }
+
+    static class InputReader {
+        public BufferedReader reader;
+        public StringTokenizer tokenizer;
+
+        public InputReader(InputStream stream) {
+            reader = new BufferedReader(new InputStreamReader(stream), 32768);
+            tokenizer = null;
+        }
+
+        public String next() {
+            while (tokenizer == null || !tokenizer.hasMoreTokens()) {
+                try {
+                    tokenizer = new StringTokenizer(reader.readLine());
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            return tokenizer.nextToken();
+        }
+
+        public int nextInt() {
+            return Integer.parseInt(next());
+        }
+        public double nextDouble() {
+            return Double.parseDouble(next());
+        }
+    }
+}
+</code></pre><h3 id="凸多边形面积并"><a name="凸多边形面积并" href="#凸多边形面积并"></a>凸多边形面积并</h3><pre><code data-origin="<pre><code>//需要头文件
+import java.awt.geom.Area;
+import java.awt.geom.Path2D;
+import java.awt.geom.PathIterator;
+
+
+    private static double calcArea(Area area) {
+        double ret = 0;
+        PathIterator it = area.getPathIterator(null);//获得该图形的边界
+        double[] buffer = new double[6], last = new double[2], first = null;
+        while (!it.isDone()) {
+            switch (it.currentSegment(buffer)) {
+                case PathIterator.SEG_MOVETO:
+                case PathIterator.SEG_LINETO:
+                    if (first == null) {
+                        first = new double[2];
+                        first[0] = buffer[0]; first[1] = buffer[1];
+                    } else {
+                        ret += last[0] * buffer[1] - last[1] * buffer[0];
+                    }
+                    last[0] = buffer[0]; last[1] = buffer[1];
+                    break;
+                case PathIterator.SEG_CLOSE:
+                    ret += last[0] * first[1] - last[1] * first[0];
+                    first = null;
+                    break;
+            }
+            it.next();
+        }
+        return ret;
+    }
+
+
+    int n = in.nextInt();//多边形个数
+    Area totalArea = new Area();
+    double total = 0.0;
+    for(int i = 0;i &amp;lt; n; i++) {
+        Path2D.Double pd = new Path2D.Double();
+        double a = in.nextDouble(),b = in.nextDouble();
+        pd.moveTo(a,b);
+        for(int j = 0;j &amp;lt; 3; j++) {//读入第i个多边形,这里是四边形
+            a = in.nextDouble();
+            b = in.nextDouble();
+            pd.lineTo(a,b);
+        }
+        pd.closePath();
+        Area tmpArea = new Area(pd);
+        totalArea.add(tmpArea);//加入总图形
+        total += calcArea(tmpArea);//获得第i个多边形的面积
+    }
+</code></pre>">//需要头文件
+import java.awt.geom.Area;
+import java.awt.geom.Path2D;
+import java.awt.geom.PathIterator;
+
+
+    private static double calcArea(Area area) {
+        double ret = 0;
+        PathIterator it = area.getPathIterator(null);//获得该图形的边界
+        double[] buffer = new double[6], last = new double[2], first = null;
+        while (!it.isDone()) {
+            switch (it.currentSegment(buffer)) {
+                case PathIterator.SEG_MOVETO:
+                case PathIterator.SEG_LINETO:
+                    if (first == null) {
+                        first = new double[2];
+                        first[0] = buffer[0]; first[1] = buffer[1];
+                    } else {
+                        ret += last[0] * buffer[1] - last[1] * buffer[0];
+                    }
+                    last[0] = buffer[0]; last[1] = buffer[1];
+                    break;
+                case PathIterator.SEG_CLOSE:
+                    ret += last[0] * first[1] - last[1] * first[0];
+                    first = null;
+                    break;
+            }
+            it.next();
+        }
+        return ret;
+    }
+
+
+    int n = in.nextInt();//多边形个数
+    Area totalArea = new Area();
+    double total = 0.0;
+    for(int i = 0;i &lt; n; i++) {
+        Path2D.Double pd = new Path2D.Double();
+        double a = in.nextDouble(),b = in.nextDouble();
+        pd.moveTo(a,b);
+        for(int j = 0;j &lt; 3; j++) {//读入第i个多边形,这里是四边形
+            a = in.nextDouble();
+            b = in.nextDouble();
+            pd.lineTo(a,b);
+        }
+        pd.closePath();
+        Area tmpArea = new Area(pd);
+        totalArea.add(tmpArea);//加入总图形
+        total += calcArea(tmpArea);//获得第i个多边形的面积
+    }
+</code></pre><h3 id="排序重载"><a name="排序重载" href="#排序重载"></a>排序重载</h3><pre><code data-origin="<pre><code>//创建一个该类的List，例如下面类为Interger时
+List&amp;lt;Integer&amp;gt; h = new ArrayList&amp;lt;Integer&amp;gt;();
+//List 赋值
+for(int i = 0;i &amp;lt; n; i++) h.add(i);
+//排序重载 相等返回0，小于返回-1，大于返回1
+Collections.sort(h,new Comparator&amp;lt;Integer&amp;gt;() {
+    public int compare(Integer a,Integer b){
+    if(相等) return 0;
+    else if(小于) return -1;
+    else return 1;
+}
+});
+</code></pre>">//创建一个该类的List，例如下面类为Interger时
+List&lt;Integer&gt; h = new ArrayList&lt;Integer&gt;();
+//List 赋值
+for(int i = 0;i &lt; n; i++) h.add(i);
+//排序重载 相等返回0，小于返回-1，大于返回1
+Collections.sort(h,new Comparator&lt;Integer&gt;() {
+    public int compare(Integer a,Integer b){
+    if(相等) return 0;
+    else if(小于) return -1;
+    else return 1;
+}
+});
+</code></pre><h4 id="文件读写"><a name="文件读写" href="#文件读写"></a>文件读写</h4><pre><code data-origin="<pre><code>public static void main(String[] args) throws FileNotFoundException {
+        Scanner in = new Scanner(new File(&quot;xxx.in&quot;));
+        in.close();
+
+        try{
+        PrintWriter out = new PrintWriter(new File(&quot;xxx.out&quot;));
+        out.println(xxx);
+        out.close();
+        } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+}
+</code></pre>">public static void main(String[] args) throws FileNotFoundException {
+        Scanner in = new Scanner(new File("xxx.in"));
+        in.close();
+
+        try{
+        PrintWriter out = new PrintWriter(new File("xxx.out"));
+        out.println(xxx);
+        out.close();
+        } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+}
+</code></pre><h3 id="保留位数小数输出"><a name="保留位数小数输出" href="#保留位数小数输出"></a>保留位数小数输出</h3><pre><code data-origin="<pre><code>    public static String doudou(double value) {
+         BigDecimal bd = new BigDecimal(value);
+         bd = bd.setScale(6, RoundingMode.HALF_UP);//保留6位
+         return bd.toString();
+        }
+</code></pre>">    public static String doudou(double value) {
+         BigDecimal bd = new BigDecimal(value);
+         bd = bd.setScale(6, RoundingMode.HALF_UP);//保留6位
+         return bd.toString();
+        }
+</code></pre><h3 id="java类的函数"><a name="java类的函数" href="#java类的函数"></a>JAVA类的函数</h3><h4 id="integer类"><a name="integer类" href="#integer类"></a>Integer类</h4><p>a.bitCount() 返回a的二进制中1的个数<br>Integer.toBinaryString(x) 返回x的二进制形式的字符串<br>Integer.toHexString(x) 返回16进制形式的字符串<br>Integer.toOctalString(x) 返回8进制形式的字符串<br>Integer.toString() 数字转字符串<br>Integer.valueOf(s) 字符串s转为数字</p><h4 id="string类"><a name="string类" href="#string类"></a>String类</h4><p>s.charAt(a) 返回下标为a的字符<br>s.compareTo(ss) 比较字典序，返回整数，0相等;大于0表示s比ss大;小于0表示s比ss小<br>s.compareToIgnoreCase(ss) 不区分大小写比较字典序<br>s.concat(ss) 返回 将ss连接到s的结尾后的新字符串<br>s.endsWith(ss) 判断ss是不是s的后缀<br>s.startsWith(ss) 判断ss是不是s的前缀<br>s.equals(ss) 判断s与ss是否相等<br>s.equalsIgnoreCase(ss) 不区分大小写判断s与ss是否相等<br>s.length() 返回s的长度<br>s.replace(a,b) 返回一个字符串，把s中所有的a字符替换为b<br>s.substring(a,b) 返回s的下标从a到b - 1的子串<br>s.toLowerCase() 返回将s中所有字符都替换成小写后的字符串<br>s.toUpperCase() 返回将s中所有字符都替换成大写后的字符串</p><h4 id="stringbuffer类，性能比string类高"><a name="stringbuffer类，性能比string类高" href="#stringbuffer类，性能比string类高"></a>StringBuffer类，性能比String类高</h4><p>StringBuffer s = new StringBuffer(u);  构造方式，u可以为空，string，int，double，boolean，StringBuffer各种<br>s.append(u) 在s的结尾添加u，u可以为string，int，double，boolean，StringBuffer各种<br>s.insert(a,u) 在下标为a处插入u，u可以为string，int，double，boolean各种<br>s.charAt(a) 返回下标为a的字符<br>s.delete(a,b) 删除s中下标为a到b-1的字符<br>s.deleteCharAt(a) 删除s中下标为a的字符<br>s.length() 返回s的长度<br>s.reverse() 反转s<br>s.serCharAt(a,u) 将下标为a的字符置为字符u<br>s.setLength(a) 将s的长度置为a，即下标大于a的部分删去，不足补空格<br>s.substring(a,b) 返回s的下标从a到b - 1的子串<br>s.toString() 返回把s转换为String类</p><h4 id="random类，随机数-java.util.random"><a name="random类，随机数-java.util.random" href="#random类，随机数-java.util.random"></a>Random类，随机数  java.util.Random</h4><p>Random u = new Random();  构造一个以系统时间为种子的类<br>u.nextInt() 返回一个int范围(存在负数)内的伪随机数<br>u.nextInt(a) 返回一个[0,a)的伪随机数<br>u.nextDouble() 返回一个[0,1)之间的随机浮点数</p><h4 id="biginteger类"><a name="biginteger类" href="#biginteger类"></a>BigInteger类</h4><p>常数: BigInteger.ZERO 0; BigInteger.ONE 1; BigInteger.TEN 10<br>a.abs() 返回a的绝对值<br>a.and(b) 返回a &amp; b<br>a.not() 返回 ~a<br>a.or(b) 返回a | b<br>a.xor(b) 返回 a ^ b<br>a.andNot(b) 返回a &amp; (~b)<br>a.bitCount() 返回a的二进制中1的个数<br>a.bitLength() 返回a的二进制位数<br>a.setBit(n) 把a在二进制下第n位(从0开始)置1<br>a.clearBit() 把a在二进制下第n位(从0开始)置0<br>a.flipBit(n) 把a在二进制下第n位(从0开始)取反<br>a.testBit(n) 返回a在二进制下第n位是否为1<br>a.shiftLeft(n) 返回 a&lt;&lt;n
+a.shiftRight(n) 返回 a&gt;&gt;n<br>a.getLowestSetBit() 返回a在二进制下最低的为1的位(从0开始)<br>a.compareTo(b) 比较a和b的大小，返回0相等，正a比b大，负a比b小<br>a.add(b) 返回a+b<br>a.divide(b) 返回a/b<br>a.mod(b) 返回a%b<br>a.modInverse(b) 返回a模b下的逆元<br>a.modPow(b,m) 返回a^b%m<br>a.pow(b) 返回a^b<br>a.subtract(b) 返回 a - b<br>a.multiply(b) 返回a * b<br>a.doubleValue() 返回a转换成double后的值<br>a.intValue() 返回a转换成int后的值<br>a.longValue() 返回a转换成long后的值<br>a.equals(b) 判断a和b是否相等<br>a.max(b) 返回max(a,b)<br>a.min(b) 返回min(a,b)<br>a.gcd(b) 返回gcd(a,b)<br>a.hashCode() 返回a的hash值<br>a.isProbablePrime(int c) 如果a是质数的概率大于1-1/(2c)，返回true;否则返回false(c越大越精确)<br>a.nextProbablePrime() 返回第一个大于a的可能的质数<br>a.toString() 返回a转换成的字符串<br>BigInteger.valueOf(long a) 把a转换成大数</p><h4 id="bigdecimal类"><a name="bigdecimal类" href="#bigdecimal类"></a>BigDecimal类</h4><p>a.abs() 返回a的绝对值<br>a.add(b) 返回a+b<br>a.compareTo(b) 比较a和b的大小，返回0相等，正a比b大，负a比b小<br>a.divide(b) 返回a/b<br>a.divide(b,100,BigDecimal.ROUND_HALF_UP) a/b 保留100位小数<br>a.multiply(b) 返回a * b<br>a.subtract(b) 返回 a - b<br>a.hashCode() 返回a的hash值<br>a.doubleValue() 返回a转换成double后的值<br>a.intValue() 返回a转换成int后的值<br>a.longValue() 返回a转换成long后的值<br>a.max(b) 返回max(a,b)<br>a.min(b) 返回min(a,b)<br>a.movePointLeft(n) 返回a的小数点左移n位后的数<br>a.movePointRight(n) 返回a的小数点右移n位后的数<br>a.pow(int b) 返回a^b<br>a.precision() 返回a的精度<br>a.toBigInteger()<br>BigDecimal.valueOf(a) 把a转换成高精度浮点<br>a.toPlainString() 返回不带指数的字符串<br>a.toString() 返回字符串，可能是指数形式<br>a.stripTrailingZeros() 去除a中小数点后末尾的0(前导0转换时自动去除)</p><h4 id="list类"><a name="list类" href="#list类"></a>List类</h4><p>List&lt;Integer&gt; f = new ArrayList&lt;Integer&gt;();<br>f.add(x) 在f的末尾添加x<br>f.add(i,x) 在下标为i的位置插入x<br>f.clear() 清空f<br>f.contains(x) 判断f中是否存在x<br>f.get(i) 返回f中下标为i的元素<br>f.isEmpty() 判断f是否为空<br>f.remove(i) 移除f中下标为i的数<br>f.set(i,x) 把下标为i的元素替换为x<br>f.size() 返回f的大小<br>f.toArray() 转换为数组</p><h4 id="set-&amp;&amp;-map-&amp;&amp;-hashset-&amp;&amp;-hashmap"><a name="set-&amp;&amp;-map-&amp;&amp;-hashset-&amp;&amp;-hashmap" href="#set-&amp;&amp;-map-&amp;&amp;-hashset-&amp;&amp;-hashmap"></a>Set &amp;&amp; Map &amp;&amp; HashSet &amp;&amp; HashMap</h4><p>(set独有)add(),toArray()<br>clear(),contains(),isEmpty(),remove(),size()<br>(map独有) get(key),put(kay,value),containsKey(),containsValue()</p><h4 id="arrays类"><a name="arrays类" href="#arrays类"></a>Arrays类</h4><p>Arrays.binarySearch(f,x) 在f中二分x的下标，没有返回负数<br>Arrays.binarySearch(f,l,r,x) 在f中下标为[l,r)的区间二分x在f的下标，没有返回负数<br>Arrays.copyOf(f,n) 返回f中前n个元素组成的数组，不足补0<br>Arrays.copyOfRange(f,l,r) 返回f中[l,r)区间的元素<br>Arrays.fill(f,l,r,x) 把f中[l,r)区间的元素置为x<br>Arrays.fill(f,x) 把f所有元素置为x<br>Arrays.sort(f) 把f排序<br>Arrays.sort(f,l,r) 把f中[l,r)区间的元素排序<br>Arrays.toString(f) 返回f转换成的字符串</p><h4 id="scanner类"><a name="scanner类" href="#scanner类"></a>Scanner类</h4><p>.hasNext() 还有输入返回true<br>.hasNextBigInteger()<br>.hasNextBigDecimal()<br>.hasNextInt()<br>.hasNextLine() 是否还有一行<br>.next() 读取字符串<br>.nextLine() 读取一行</p><pre><code data-origin="<pre><code>题意: p(x) = \sum x^(p[i]) , q(x) = sum x^B[i](B[i]很小)
+令 p(x) ^ n 的系数为a[i], \sum q(x)^i 的系数为b[i]
+求\sum a[i]b[i] 
+
+p(x) = \sum x^(-p[i])
+q(x) = 1 - \sum x^B[i]
+求p(x) ^ n % q(x) 的 x^0的系数
+
+int n,m,p[11],B[111];
+int ta[505];
+void multi(int a[],int b[],int c[]){
+    memset(ta,0,sizeof(ta));
+    for(int i=0;i&amp;lt;=250;i++){
+        if(!a[i])continue;
+        for(int j=0;j&amp;lt;=250;j++){
+            ta[i+j]=(ta[i+j]+1ll*a[i]*b[j])%mod;
+        }
+    }
+    for(int i=500;i&amp;gt;250;i--){
+        if(!ta[i])continue;
+        for(int j=1;j&amp;lt;=m;j++)ta[i-B[j]]=(ta[i-B[j]]+ta[i])%mod;
+        ta[i]=0;
+    }
+    for(int i=0;i&amp;lt;=250;i++)c[i]=ta[i];
+}
+int tb[555];
+void qpow(int a[],ll k){
+    memset(tb,0,sizeof(tb));
+    tb[0]=1;
+    while(k){
+        if(k&amp;amp;1)multi(tb,a,tb);
+        multi(a,a,a);
+        k&amp;gt;&amp;gt;=1;
+    }
+    for(int i=0;i&amp;lt;=250;i++)a[i]=tb[i];
+}
+ll K;
+int a[555],aa[555];
+int main(){
+    cin&amp;gt;&amp;gt;n&amp;gt;&amp;gt;m&amp;gt;&amp;gt;K;
+    for(int i=1;i&amp;lt;=n;i++)cin&amp;gt;&amp;gt;p[i];
+    for(int i=1;i&amp;lt;=m;i++)cin&amp;gt;&amp;gt;B[i];
+    for(int i=1;i&amp;lt;=n;i++){
+        memset(a,0,sizeof(a));
+        a[1]=1;
+        qpow(a,p[i]);
+        for(int j=0;j&amp;lt;=250;j++)aa[j]=(aa[j]+a[j])%mod;
+    }
+    qpow(aa,K);
+    for(int i=250;i&amp;gt;0;i--){
+        for(int j=1;j&amp;lt;=m;j++)if(B[j]&amp;lt;=i)aa[i-B[j]]=(aa[i-B[j]]+aa[i])%mod;
+        aa[i]=0;
+    }
+    cout&amp;lt;&amp;lt;aa[0]&amp;lt;&amp;lt;endl;
+    return 0;
+}
+</code></pre>">题意: p(x) = \sum x^(p[i]) , q(x) = sum x^B[i](B[i]很小)
+令 p(x) ^ n 的系数为a[i], \sum q(x)^i 的系数为b[i]
+求\sum a[i]b[i] 
+
+p(x) = \sum x^(-p[i])
+q(x) = 1 - \sum x^B[i]
+求p(x) ^ n % q(x) 的 x^0的系数
+
+int n,m,p[11],B[111];
+int ta[505];
+void multi(int a[],int b[],int c[]){
+    memset(ta,0,sizeof(ta));
+    for(int i=0;i&lt;=250;i++){
+        if(!a[i])continue;
+        for(int j=0;j&lt;=250;j++){
+            ta[i+j]=(ta[i+j]+1ll*a[i]*b[j])%mod;
+        }
+    }
+    for(int i=500;i&gt;250;i--){
+        if(!ta[i])continue;
+        for(int j=1;j&lt;=m;j++)ta[i-B[j]]=(ta[i-B[j]]+ta[i])%mod;
+        ta[i]=0;
+    }
+    for(int i=0;i&lt;=250;i++)c[i]=ta[i];
+}
+int tb[555];
+void qpow(int a[],ll k){
+    memset(tb,0,sizeof(tb));
+    tb[0]=1;
+    while(k){
+        if(k&amp;1)multi(tb,a,tb);
+        multi(a,a,a);
+        k&gt;&gt;=1;
+    }
+    for(int i=0;i&lt;=250;i++)a[i]=tb[i];
+}
+ll K;
+int a[555],aa[555];
+int main(){
+    cin&gt;&gt;n&gt;&gt;m&gt;&gt;K;
+    for(int i=1;i&lt;=n;i++)cin&gt;&gt;p[i];
+    for(int i=1;i&lt;=m;i++)cin&gt;&gt;B[i];
+    for(int i=1;i&lt;=n;i++){
+        memset(a,0,sizeof(a));
+        a[1]=1;
+        qpow(a,p[i]);
+        for(int j=0;j&lt;=250;j++)aa[j]=(aa[j]+a[j])%mod;
+    }
+    qpow(aa,K);
+    for(int i=250;i&gt;0;i--){
+        for(int j=1;j&lt;=m;j++)if(B[j]&lt;=i)aa[i-B[j]]=(aa[i-B[j]]+aa[i])%mod;
+        aa[i]=0;
+    }
+    cout&lt;&lt;aa[0]&lt;&lt;endl;
+    return 0;
+}
+</code></pre>
+
+</body>
+</html>

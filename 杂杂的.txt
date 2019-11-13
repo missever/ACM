@@ -1,0 +1,27 @@
+ios::sync_with_stdio(false);
+cin.tie(0);
+//cin，cout加速优化
+
+sort的cmp函数中间不能用等于……
+如：
+bool cmp(const node &a,const node &b) {
+    return a.r <= b.r;//  <=是不行的，只能用<
+}
+
+map的数组下标访问会自动创建该key值(如果不存在该值的话
+所以会增加内存负担
+
+= = 高维数组访问数组贼慢
+= = map,set常数非常大、、、能用数组尽量用数组
+
+维护多个大数组时，尽量开一个struct
+
+    node operator += (const node &b) {
+        this->x = add(this->x, b.x);
+        this->y = add(this->y, b.y);
+        return *this;
+    }
+
+// xjb优化,似乎可以快一倍……暴力必备神器
+#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,unsafe-math-optimizations")
+#pragma GCC target("avx")
