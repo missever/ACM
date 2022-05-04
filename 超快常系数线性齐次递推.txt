@@ -1,0 +1,166 @@
+#include<cstdio>
+#include<iostream>
+#include<algorithm>
+#include<cstring>
+#define N 131075
+#define ll long long
+#define reg register
+#define p 998244353
+using namespace std;
+ 
+inline void read(int &x){
+    x = 0;
+    char c = getchar();
+    bool flag = false;
+    while(c<'0'||c>'9'){
+        flag |= c=='-';
+        c = getchar();
+    }
+    while(c>='0'&&c<='9'){
+        x = (x<<3)+(x<<1)+(c^48);
+        c = getchar();
+    }
+    if(flag) x = (p<<1)-x;
+    while(x>=p) x -= p;
+}
+
+inline int add(const int& x,const int& y){ return x+y>=p?x+y-p:x+y; }
+inline int dec(const int& x,const int& y){ return x<y?x-y+p:x-y; }
+inline int neg(const int& x){ return x==0?x:p-x; }
+ 
+inline int power(int a,int t){
+    int res = 1;
+    while(t){
+        if(t&1) res = (ll)res*a%p;
+        a = (ll)a*a%p;
+        t >>= 1;
+    }
+    return res;
+}
+ 
+int siz;
+int rev[N],rt[N];
+ 
+void init(int n){
+    int lim = 1;
+    while(lim<=n) lim <<= 1,++siz;
+    for(int i=0;i!=lim;++i) rev[i] = (rev[i>>1]>>1)|((i&1)<<(siz-1));
+    int w = power(3,(p-1)>>siz);
+    rt[lim>>1] = 1;
+    for(int i=(lim>>1)+1;i!=lim;++i) rt[i] = (ll)rt[i-1]*w%p;
+    for(int i=(lim>>1)-1;i;--i) rt[i] = rt[i<<1];
+}
+ 
+inline void dft(int *f,int n){
+    static unsigned long long a[N];
+    reg int x,shift = siz-__builtin_ctz(n);
+    for(int i=0;i!=n;++i) a[rev[i]>>shift] = f[i];
+    for(int mid=1;mid!=n;mid<<=1)
+    for(int j=0;j!=n;j+=(mid<<1))
+    for(int k=0;k!=mid;++k){
+        x = a[j|k|mid]*rt[mid|k]%p;
+        a[j|k|mid] = a[j|k]+p-x;
+        a[j|k] += x;
+    }
+    for(int i=0;i!=n;++i) f[i] = a[i]%p;
+}
+ 
+inline void idft(int *f,int n){
+    reverse(f+1,f+n);
+    dft(f,n);
+    int x = p-((p-1)>>__builtin_ctz(n));
+    for(int i=0;i!=n;++i) f[i] = (ll)f[i]*x%p;
+}
+ 
+inline int getlen(int n){
+    return 1<<(32-__builtin_clz(n));
+}
+ 
+inline void inverse(const int *f,int n,int *r){
+    static int g[N],h[N],st[30];
+    memset(g,0,getlen(n<<1)<<2);
+    int lim = 1,top = 0;
+    while(n){
+        st[++top] = n;
+        n >>= 1;
+    }
+    g[0] = 1;
+    while(top--){
+        n = st[top+1];
+        while(lim<=(n<<1)) lim <<= 1;
+        memcpy(h,f,(n+1)<<2);
+        memset(h+n+1,0,(lim-n)<<2);
+        dft(g,lim),dft(h,lim);
+        for(reg int i=0;i!=lim;++i) g[i] = g[i]*(2-(ll)g[i]*h[i]%p+p)%p;
+        idft(g,lim);
+        memset(g+n+1,0,(lim-n)<<2);
+    }
+    memcpy(r,g,(n+1)<<2);
+}
+
+inline void doublen(int *f,int n){
+    static int g[N];
+    memcpy(g,f,n<<2);
+    idft(g,n);
+    for(int i=0;i!=n;++i) g[i] = (ll)g[i]*rt[n|i]%p;
+    dft(g,n);
+    for(int i=n-1;~i;--i)
+        f[i<<1] = f[i],f[i<<1|1] = g[i];
+}
+
+// [x^n]f(x)/g(x)
+int solve(const int *f,const int *g,int k,int n){
+    static int P[N],Q[N],h[N];
+    int lim = getlen(k<<1),hl = getlen(k);
+    memcpy(P,f,lim<<2),memcpy(Q,g,lim<<2);
+    dft(P,lim);
+    while(n>=k){
+        for(int i=0;i!=lim;++i) h[i] = Q[i^hl];
+        for(int i=0;i!=lim;++i){
+            P[i] = (ll)P[i]*h[i]%p;
+            Q[i] = (ll)Q[i]*h[i]%p;
+        }
+        for(int i=0;i!=hl;++i) Q[i] = (Q[i]+Q[i+hl])>>1;
+        if(n&1){
+            P[0] = 499122177ll*(P[0]-P[hl]+p)%p; // 499122177 = inv2
+            for(int i=1;i!=hl;++i) P[i] = (ll)rt[lim-i]*(p+((P[i]&1)^(P[i+hl]&1)?add((P[i+hl]-P[i])>>1,499122177):(P[i+hl]-P[i])>>1))%p;
+        }else{
+            for(int i=0;i!=hl;++i) P[i] = (P[i]&1)^(P[i+hl]&1)?add((P[i]+P[i+hl])>>1,499122177):(P[i]+P[i+hl])>>1;
+        }
+        n >>= 1;
+        if(n<k) break;
+        doublen(P,hl),doublen(Q,hl);
+    }
+    idft(Q,hl),idft(P,hl);
+    inverse(Q,n,Q);
+    int res = 0;
+    for(int i=0;i<=n;++i) res = (res+(ll)P[i]*Q[n-i])%p;
+    return res;
+}
+
+int linear_recur(const int *f,const int *a,int k,int n){
+    static int g[N],b[N];
+    g[0] = 1;
+    for(int i=1;i<=k;++i) g[i] = neg(f[i]); // 参考md文件 g(x)=Q(x)
+    memcpy(b,a,k<<2);
+    int lim = getlen(k<<1);
+    dft(g,lim),dft(b,lim);
+    for(int i=0;i!=lim;++i) b[i] = (ll)b[i]*g[i]%p;
+    idft(b,lim);
+    memset(b+k,0,(lim-k+1)<<2);// 参考md文件 b(x)=P(x)
+    return solve(b,g,k,n);
+}
+
+int n,k;
+int f[N],a[N];
+
+// input: a[n] = \sum_{i=1}^{k} f[i]*a[n-i]
+// give you a[0] ~ a[k-1], you need return a[n]
+int main(){
+    scanf("%d%d",&n,&k);
+    init(k<<1);
+    for(int i=1;i<=k;++i) read(f[i]);
+    for(int i=0;i<k;++i) read(a[i]);
+    printf("%d",linear_recur(f,a,k,n));
+    return 0;   
+}

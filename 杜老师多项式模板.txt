@@ -355,7 +355,8 @@ vector<int> multiply_all(int l, int r, vector<vector<int>> &all) {
     return multiply_all(l, y, all) * multiply_all(y + 1, r, all);
   }
 }
-
+// 这是多项式多点求值   因为f%(x-x0)的常数项即是f(x0) 所以考虑分治方式进行多项式取模
+// 当然有更快方法 https://www.luogu.com.cn/problem/P5050
 vector<int> evaluate(const vector<int> &f, const vector<int> &x) {
   int n = x.size();
   if (!n) {
@@ -379,7 +380,7 @@ vector<int> evaluate(const vector<int> &f, const vector<int> &x) {
   }
   return y;
 }
-
+// 多项式插值  基于拉格朗日插值法
 vector<int> interpolate(const vector<int> &x, const vector<int> &y) {
   int n = x.size();
   vector<vector<int>> up(n * 2);
